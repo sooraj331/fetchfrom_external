@@ -25,6 +25,10 @@ jobs:
         run: |
           pip install requests beautifulsoup4
 
+      - name: Install dependencies
+        run: |
+          pip install requests beautifulsoup4 cloudscraper
+
       - name: Run Scraper
         run: python update_m3u.py
 
