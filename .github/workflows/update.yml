@@ -2,15 +2,14 @@ name: Update M3U Every 6 Hours
 
 on:
   schedule:
-    # Runs every 6 hours (00:00, 06:00, 12:00, 18:00 UTC)
     - cron: '0 */6 * * *'
-  workflow_dispatch: # Allows you to run it manually for testing
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Essential for the bot to push the new file
+      contents: write
 
     steps:
       - name: Checkout repository
@@ -24,11 +23,10 @@ jobs:
       - name: Install dependencies
         run: |
           pip install playwright
-          # This installs the actual Chromium browser engine
-          playwright install chromium --with-deps
+          # This command ensures all Linux libraries for the browser are present
+          python -m playwright install chromium --with-deps
 
       - name: Run Scraper
-        # This executes the Playwright script we created
         run: python update_m3u.py
 
       - name: Commit and Push changes
@@ -36,6 +34,5 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add playlist.m3u
-          # The "|| echo" prevents the workflow from failing if the file hasn't changed
           git commit -m "Automated M3U Update: $(date)" || echo "No changes to commit"
           git push
