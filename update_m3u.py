@@ -27,7 +27,7 @@ def main():
     for feed in feeds:
         cid = feed.get("channel")
         if cid:
-            channel_languages.setdefault(cid, []).append(feed.get("language", ""))
+            channel_languages.setdefault(cid, []).append(feed.get("languages", ""))
 
     channel_logos = {logo["channel"]: logo.get("url", "") for logo in logos if "channel" in logo}
     channel_streams = {stream["channel"]: stream.get("url", "") for stream in streams if "channel" in stream}
