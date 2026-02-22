@@ -1,36 +1,37 @@
-name: Auto Update M3U
+name: Update M3U Every 6 Hours
 
 on:
   schedule:
+    # This runs every 6 hours (00:00, 06:00, 12:00, 18:00 UTC)
     - cron: '0 */6 * * *'
-  workflow_dispatch:
+  workflow_dispatch: # Allows you to run it manually for testing
 
 jobs:
-  update:
+  build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # Allows the bot to push changes
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Setup Python
+      - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.11'
+          python-version: '3.x'
 
       - name: Install dependencies
         run: |
-          sudo apt-get update
-          sudo apt-get install -y google-chrome-stable
-          pip install selenium requests
+          pip install requests beautifulsoup4
 
-      - name: Run script
+      - name: Run Scraper
         run: python update_m3u.py
 
-      - name: Commit & Push
+      - name: Commit and Push changes
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "actions@github.com"
-          git add index.m3u
-          git commit -m "Auto update M3U" || echo "No changes"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add playlist.m3u
+          git commit -m "Automated M3U Update: $(date)" || echo "No changes to commit"
           git push
