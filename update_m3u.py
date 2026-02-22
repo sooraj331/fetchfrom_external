@@ -1,41 +1,44 @@
-import requests
+import cloudscraper
 from bs4 import BeautifulSoup
 import sys
 
 URL = "https://freeiptv2023-d.ottc.xyz/index.php?action=view"
 OUTPUT_FILE = "playlist.m3u"
 
-# Adding headers to look like a real Chrome browser
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-}
-
 def get_m3u():
+    # cloudscraper bypasses Cloudflare challenges automatically
+    scraper = cloudscraper.create_scraper()
+    
     try:
-        print("Connecting to website...")
-        response = requests.get(URL, headers=HEADERS, timeout=30)
-        response.raise_for_status()
+        print("Fetching page through Cloudflare...")
+        response = scraper.get(URL, timeout=30)
         
+        if response.status_code != 200:
+            print(f"Failed to load page. Status: {response.status_code}")
+            sys.exit(1)
+
         soup = BeautifulSoup(response.text, 'html.parser')
+        
+        # Look for the input field
         m3u_input = soup.find('input', {'id': 'm3uLink'})
         
         if not m3u_input:
-            print("Error: Could not find the 'm3uLink' ID on the page.")
-            # We exit with 1 so GitHub Actions knows the scraper failed
+            # Debugging: Print a bit of the HTML to see what the script actually sees
+            print("HTML structure received, but 'm3uLink' not found.")
+            print("Possible bot protection blocked the content.")
             sys.exit(1)
 
         m3u_url = m3u_input.get('value')
         print(f"Success! Found URL: {m3u_url}")
 
-        # Download the actual file
+        # Download the file
         print("Downloading M3U file...")
-        m3u_content = requests.get(m3u_url, headers=HEADERS, timeout=60)
-        m3u_content.raise_for_status()
-
-        with open(OUTPUT_FILE, 'wb') as f:
-            f.write(m3u_content.content)
+        m3u_response = scraper.get(m3u_url, timeout=60)
         
-        print(f"File saved successfully as {OUTPUT_FILE}")
+        with open(OUTPUT_FILE, 'wb') as f:
+            f.write(m3u_response.content)
+        
+        print("File saved successfully.")
 
     except Exception as e:
         print(f"An error occurred: {e}")
