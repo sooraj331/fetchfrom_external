@@ -1,47 +1,40 @@
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.chrome.service import Service
 import requests
+from bs4 import BeautifulSoup
+import re
 
+# Configuration
 URL = "https://freeiptv2023-d.ottc.xyz/index.php?action=view"
+OUTPUT_FILE = "playlist.m3u"
 
-def get_m3u_link():
-    options = Options()
-    options.add_argument("--headless")
-    options.add_argument("--no-sandbox")
-    options.add_argument("--disable-dev-shm-usage")
-    options.add_argument("--disable-gpu")
-    options.add_argument("--remote-debugging-port=9222")
-
-    # Selenium Manager automatically finds correct driver
-    driver = webdriver.Chrome(options=options)
-
+def get_m3u():
     try:
-        driver.get(URL)
+        # 1. Fetch the webpage
+        response = requests.get(URL, timeout=30)
+        response.raise_for_status()
+        
+        # 2. Parse HTML to find the input value
+        soup = BeautifulSoup(response.text, 'html.parser')
+        m3u_input = soup.find('input', {'id': 'm3uLink'})
+        
+        if not m3u_input:
+            print("Could not find the m3uLink ID on the page.")
+            return
 
-        wait = WebDriverWait(driver, 30)
-        element = wait.until(
-            EC.presence_of_element_located((By.ID, "m3uLink"))
-        )
+        m3u_url = m3u_input.get('value')
+        print(f"Found URL: {m3u_url}")
 
-        return element.get_attribute("value")
+        # 3. Download the M3U content
+        m3u_content = requests.get(m3u_url, timeout=60)
+        m3u_content.raise_for_status()
 
-    finally:
-        driver.quit()
+        # 4. Save to file
+        with open(OUTPUT_FILE, 'wb') as f:
+            f.write(m3u_content.content)
+        print("Successfully updated playlist.m3u")
 
-
-def download_m3u(m3u_url):
-    response = requests.get(m3u_url, timeout=30)
-    response.raise_for_status()
-
-    with open("index.m3u", "w", encoding="utf-8") as f:
-        f.write(response.text)
-
+    except Exception as e:
+        print(f"Error occurred: {e}")
+        exit(1)
 
 if __name__ == "__main__":
-    link = get_m3u_link()
-    print("Found M3U:", link)
-    download_m3u(link)
+    get_m3u()
