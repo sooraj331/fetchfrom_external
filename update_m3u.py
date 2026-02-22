@@ -1,6 +1,5 @@
 import requests
 
-# IPTV-org JSON URLs
 CHANNELS_URL = "https://iptv-org.github.io/api/channels.json"
 FEEDS_URL    = "https://iptv-org.github.io/api/feeds.json"
 LOGOS_URL    = "https://iptv-org.github.io/api/logos.json"
@@ -26,8 +25,14 @@ def main():
     channel_languages = {}
     for feed in feeds:
         cid = feed.get("channel")
-        if cid:
-            channel_languages.setdefault(cid, []).append(feed.get("languages", ""))
+        lang = feed.get("language", "")
+        if cid and lang:
+            if isinstance(lang, dict):
+                lang_name = lang.get("name", "")
+            else:
+                lang_name = str(lang)
+            if lang_name:
+                channel_languages.setdefault(cid, []).append(lang_name)
 
     channel_logos = {logo["channel"]: logo.get("url", "") for logo in logos if "channel" in logo}
     channel_streams = {stream["channel"]: stream.get("url", "") for stream in streams if "channel" in stream}
@@ -43,7 +48,7 @@ def main():
             url = channel_streams.get(cid, "")
 
             if not url:
-                continue  # skip channels without streams
+                continue
 
             languages = ",".join(channel_languages.get(cid, []))
             logo = channel_logos.get(cid, "")
