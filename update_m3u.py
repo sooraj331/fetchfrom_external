@@ -1,5 +1,6 @@
 import requests
 
+# API Endpoints
 CHANNELS_URL = "https://iptv-org.github.io/api/channels.json"
 FEEDS_URL    = "https://iptv-org.github.io/api/feeds.json"
 LOGOS_URL    = "https://iptv-org.github.io/api/logos.json"
@@ -9,9 +10,13 @@ LANGUAGES_URL= "https://iptv-org.github.io/api/languages.json"
 OUTPUT_FILE = "channels.m3u"
 
 def fetch_json(url):
-    resp = requests.get(url)
-    resp.raise_for_status()
-    return resp.json()
+    try:
+        resp = requests.get(url, timeout=30)
+        resp.raise_for_status()
+        return resp.json()
+    except Exception as e:
+        print(f" Error fetching {url}: {e}")
+        return []
 
 def main():
     print("Fetching JSON data...")
@@ -21,82 +26,95 @@ def main():
     streams  = fetch_json(STREAMS_URL)
     languages_map = fetch_json(LANGUAGES_URL)
 
-    # Map language codes to full name
+    # 1. Map language codes (e.g., "fra") to full names (e.g., "French")
     lang_code_to_name = {l["code"]: l["name"] for l in languages_map if "code" in l and "name" in l}
 
-    # Map channel id to languages (full names)
+    # 2. Map channel ID to unique languages using the "languages" key from feeds.json
     channel_languages = {}
     for feed in feeds:
         cid = feed.get("channel")
         if not cid:
             continue
-        lang_field = feed.get("language", "")
-        lang_name = ""
-        if isinstance(lang_field, dict):
-            code = lang_field.get("code", "")
-            lang_name = lang_code_to_name.get(code, code)
-        elif isinstance(lang_field, str):
-            lang_name = lang_code_to_name.get(lang_field, lang_field)
-        elif isinstance(lang_field, list):
-            lang_list = []
-            for l in lang_field:
-                if isinstance(l, dict):
-                    code = l.get("code", "")
-                    lang_list.append(lang_code_to_name.get(code, code))
-                else:
-                    lang_list.append(lang_code_to_name.get(str(l), str(l)))
-            lang_name = ",".join(lang_list)
-        if lang_name:
-            channel_languages.setdefault(cid, []).append(lang_name)
+        
+        # FIX: Accessing the plural "languages" key as seen in the API
+        raw_langs = feed.get("languages", [])
+        
+        # Ensure we are working with a list
+        if isinstance(raw_langs, str):
+            raw_langs = [raw_langs]
+            
+        if cid not in channel_languages:
+            channel_languages[cid] = set()
 
-    # Logos
+        for code in raw_langs:
+            # Map code to name, fallback to code if not found
+            name = lang_code_to_name.get(code, code)
+            channel_languages[cid].add(name)
+
+    # 3. Map Logos
     channel_logos = {logo["channel"]: logo.get("url", "") for logo in logos if "channel" in logo}
 
-    # Streams with user_agent and referrer
+    # 4. Map Streams (handling multiple streams per channel)
     channel_streams = {}
     for s in streams:
         cid = s.get("channel")
         url = s.get("url", "")
         if cid and url:
-            ua = s.get("user_agent", "")
-            ref = s.get("referrer", "")
-            channel_streams[cid] = {"url": url, "user_agent": ua, "referrer": ref}
+            stream_data = {
+                "url": url, 
+                "user_agent": s.get("user_agent", ""), 
+                "referrer": s.get("referrer", "")
+            }
+            channel_streams.setdefault(cid, []).append(stream_data)
 
+    # 5. Generate the M3U File
+    print(f"Creating {OUTPUT_FILE}...")
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n\n")
         count = 0
+        
         for ch in channels:
             cid = ch.get("id")
-            name = ch.get("name", "")
-            country = ch.get("country", "")
-            category = ch.get("categories", [])
-
-            stream_info = channel_streams.get(cid)
-            if not stream_info:
+            
+            # Skip if no stream exists for this channel
+            if cid not in channel_streams:
                 continue
 
-            url = stream_info["url"]
-            user_agent = stream_info.get("user_agent", "")
-            referrer = stream_info.get("referrer", "")
-
-            languages = ",".join(channel_languages.get(cid, []))
+            name = ch.get("name", "Unknown Channel")
+            country = ch.get("country", "")
             logo = channel_logos.get(cid, "")
-            group_title = ",".join(category) if category else "Other"
+            
+            # Convert set of languages to a comma-separated string
+            langs_list = list(channel_languages.get(cid, []))
+            languages_str = ",".join(langs_list)
+            
+            # Join categories
+            categories = ch.get("categories", [])
+            group_title = ";".join(categories) if categories else "Other"
 
-            f.write(
-                f'#EXTINF:-1 tvg-id="{cid}" '
-                f'tvg-name="{name}" '
-                f'tvg-logo="{logo}" '
-                f'tvg-country="{country}" '
-                f'tvg-language="{languages}" '
-                f'group-title="{group_title}" '
-                f'http-user-agent="{user_agent}" '
-                f'http-referrer="{referrer}",{name}\n'
-            )
-            f.write(f"{url}\n\n")
-            count += 1
+            # Write an entry for every stream found for this channel
+            for stream in channel_streams[cid]:
+                url = stream["url"]
+                ua = stream["user_agent"]
+                ref = stream["referrer"]
 
-    print(f"M3U file created: {OUTPUT_FILE} ({count} channels)")
+                # Formatting the #EXTINF line
+                # Note: http-user-agent and http-referrer help with stream compatibility
+                line = (f'#EXTINF:-1 tvg-id="{cid}" '
+                        f'tvg-name="{name}" '
+                        f'tvg-logo="{logo}" '
+                        f'tvg-country="{country}" '
+                        f'tvg-language="{languages_str}" '
+                        f'group-title="{group_title}"')
+                
+                if ua: line += f' http-user-agent="{ua}"'
+                if ref: line += f' http-referrer="{ref}"'
+                
+                f.write(f"{line},{name}\n")
+                f.write(f"{url}\n\n")
+                count += 1
+
+    print(f"Done! M3U file created with {count} entries.")
 
 if __name__ == "__main__":
     main()
