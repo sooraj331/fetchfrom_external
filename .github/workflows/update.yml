@@ -2,7 +2,7 @@ name: Auto Update M3U
 
 on:
   schedule:
-    - cron: '0 */6 * * *'   # every 6 hours (UTC)
+    - cron: '0 */6 * * *'
   workflow_dispatch:
 
 jobs:
@@ -20,8 +20,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          sudo apt update
-          sudo apt install -y chromium-browser
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
           pip install selenium requests
 
       - name: Run script
