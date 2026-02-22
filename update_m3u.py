@@ -1,10 +1,6 @@
 import requests
-import datetime
 
-# IPTV-org API
 API_URL = "https://iptv-org.github.io/api/channels.json"
-
-# Output file
 OUTPUT_FILE = "channels.m3u"
 
 def fetch_channels():
@@ -19,18 +15,22 @@ def create_m3u(channels):
         for ch in channels:
             name = ch.get("name", "")
             country = ch.get("country", "")
-            language = ",".join([l["name"] for l in ch.get("languages", [])])
-            category = ",".join(ch.get("categories", []))
+            logo = ch.get("logo", "")
             url = ch.get("url", "")
+
+            languages = ",".join([l["name"] for l in ch.get("languages", [])])
+            categories = ",".join(ch.get("categories", []))
 
             if not url:
                 continue
 
             f.write(
-                f'#EXTINF:-1 tvg-name="{name}" '
+                f'#EXTINF:-1 '
+                f'tvg-name="{name}" '
+                f'tvg-logo="{logo}" '
                 f'tvg-country="{country}" '
-                f'tvg-language="{language}" '
-                f'tvg-category="{category}",'
+                f'tvg-language="{languages}" '
+                f'tvg-category="{categories}",'
                 f'{name}\n'
             )
             f.write(f"{url}\n\n")
