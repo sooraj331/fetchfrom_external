@@ -1,48 +1,45 @@
-import cloudscraper
-from bs4 import BeautifulSoup
-import sys
+import asyncio
+from playwright.async_api import async_playwright
 
-URL = "https://freeiptv2023-d.ottc.xyz/index.php?action=view"
-OUTPUT_FILE = "playlist.m3u"
+async def get_m3u():
+    async with async_playwright() as p:
+        # Launch a real browser
+        browser = await p.chromium.launch(headless=True)
+        context = await browser.new_context(
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+        )
+        page = await context.new_page()
 
-def get_m3u():
-    # cloudscraper bypasses Cloudflare challenges automatically
-    scraper = cloudscraper.create_scraper()
-    
-    try:
-        print("Fetching page through Cloudflare...")
-        response = scraper.get(URL, timeout=30)
-        
-        if response.status_code != 200:
-            print(f"Failed to load page. Status: {response.status_code}")
-            sys.exit(1)
+        try:
+            print("Opening website with real browser...")
+            await page.goto("https://freeiptv2023-d.ottc.xyz/index.php?action=view", wait_until="networkidle", timeout=60000)
+            
+            # Wait specifically for the input box to appear
+            print("Waiting for the link to load...")
+            await page.wait_for_selector("#m3uLink", timeout=15000)
+            
+            # Get the value
+            m3u_url = await page.get_attribute("#m3uLink", "value")
+            
+            if m3u_url:
+                print(f"Success! Found URL: {m3u_url}")
+                # Download the content
+                response = await page.request.get(m3u_url)
+                content = await response.body()
+                
+                with open("playlist.m3u", "wb") as f:
+                    f.write(content)
+                print("File saved successfully.")
+            else:
+                print("Found input but it was empty.")
 
-        soup = BeautifulSoup(response.text, 'html.parser')
-        
-        # Look for the input field
-        m3u_input = soup.find('input', {'id': 'm3uLink'})
-        
-        if not m3u_input:
-            # Debugging: Print a bit of the HTML to see what the script actually sees
-            print("HTML structure received, but 'm3uLink' not found.")
-            print("Possible bot protection blocked the content.")
-            sys.exit(1)
-
-        m3u_url = m3u_input.get('value')
-        print(f"Success! Found URL: {m3u_url}")
-
-        # Download the file
-        print("Downloading M3U file...")
-        m3u_response = scraper.get(m3u_url, timeout=60)
-        
-        with open(OUTPUT_FILE, 'wb') as f:
-            f.write(m3u_response.content)
-        
-        print("File saved successfully.")
-
-    except Exception as e:
-        print(f"An error occurred: {e}")
-        sys.exit(1)
+        except Exception as e:
+            print(f"Browser error: {e}")
+            # Take a screenshot if it fails so you can see why
+            await page.screenshot(path="error_debug.png")
+            exit(1)
+        finally:
+            await browser.close()
 
 if __name__ == "__main__":
-    get_m3u()
+    asyncio.run(get_m3u())
