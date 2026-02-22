@@ -5,8 +5,8 @@ on:
     - cron: "0 0 * * *"   # every 24 hours (UTC)
   workflow_dispatch:
 
- permissions:
-contents: write
+permissions:
+ contents: write
 
 jobs:
   update:
