@@ -1,9 +1,10 @@
 name: Auto Update M3U
 
-# Run every 5 minutes and also allow manual runs
+# Run every 5 minutes (subject to GitHub's internal queue delays)
+# Also allows manual triggering from the Actions tab
 on:
   schedule:
-    - cron: "*/5 * * * *"   # every 5 minutes (UTC)
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -26,16 +27,32 @@ jobs:
 
       # Step 3: Install dependencies
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          fi
 
       # Step 4: Run your Python script
       - name: Run update script
         run: python update_m3u.py
 
-      # Step 5: Log last run time
-      - name: Log workflow run time
+      # Step 5: Configure Git and Push Changes
+      - name: Commit and push changes
         run: |
+          # Identify the runner as the GitHub Actions Bot
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Log the time to a file (helps verify the run worked)
           echo "Last run: $(date -u)" > last_run.log
-          git add last_run.log
-          git commit -m "Update last run log" || echo "No changes to commit"
-          git push
+          
+          # Add all changes (including updates to channels.m3u or last_run.log)
+          git add .
+          
+          # Only commit if there are actually changes to avoid errors
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Auto-update M3U and logs [skip ci]"
+            git push
+          fi
