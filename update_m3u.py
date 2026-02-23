@@ -19,7 +19,7 @@ def fetch_json(url):
         return []
 
 def main():
-    print("Fetching JSON data...")
+    print("Fetching JSON data from IPTV-org...")
     channels = fetch_json(CHANNELS_URL)
     feeds    = fetch_json(FEEDS_URL)
     logos    = fetch_json(LOGOS_URL)
@@ -29,32 +29,29 @@ def main():
     # 1. Map language codes (e.g., "fra") to full names (e.g., "French")
     lang_code_to_name = {l["code"]: l["name"] for l in languages_map if "code" in l and "name" in l}
 
-    # 2. Map channel ID to unique languages using the "languages" key from feeds.json
+    # 2. Map channel ID to languages
     channel_languages = {}
     for feed in feeds:
         cid = feed.get("channel")
         if not cid:
             continue
         
-        # FIX: Accessing the plural "languages" key as seen in the API
         raw_langs = feed.get("languages", [])
-        
-        # Ensure we are working with a list
         if isinstance(raw_langs, str):
             raw_langs = [raw_langs]
             
         if cid not in channel_languages:
-            channel_languages[cid] = set()
+            channel_languages[cid] = [] # Changed to list to maintain order
 
         for code in raw_langs:
-            # Map code to name, fallback to code if not found
             name = lang_code_to_name.get(code, code)
-            channel_languages[cid].add(name)
+            if name not in channel_languages[cid]:
+                channel_languages[cid].append(name)
 
     # 3. Map Logos
     channel_logos = {logo["channel"]: logo.get("url", "") for logo in logos if "channel" in logo}
 
-    # 4. Map Streams (handling multiple streams per channel)
+    # 4. Map Streams
     channel_streams = {}
     for s in streams:
         cid = s.get("channel")
@@ -84,13 +81,17 @@ def main():
             country = ch.get("country", "")
             logo = channel_logos.get(cid, "")
             
-            # Convert set of languages to a comma-separated string
-            langs_list = list(channel_languages.get(cid, []))
-            languages_str = ",".join(langs_list)
+            # --- FIX: Only take the FIRST language ---
+            langs_list = channel_languages.get(cid, [])
+            primary_language = langs_list[0] if langs_list else ""
             
-            # Join categories
+            # --- FIX: Only take the FIRST category for Group Title ---
             categories = ch.get("categories", [])
-            group_title = ";".join(categories) if categories else "Other"
+            if categories:
+                # Take first category and make it Title Case (e.g., "movies") -> "Movies"
+                group_title = categories[0].replace("-", " ").title()
+            else:
+                group_title = "Other"
 
             # Write an entry for every stream found for this channel
             for stream in channel_streams[cid]:
@@ -99,14 +100,14 @@ def main():
                 ref = stream["referrer"]
 
                 # Formatting the #EXTINF line
-                # Note: http-user-agent and http-referrer help with stream compatibility
                 line = (f'#EXTINF:-1 tvg-id="{cid}" '
                         f'tvg-name="{name}" '
                         f'tvg-logo="{logo}" '
                         f'tvg-country="{country}" '
-                        f'tvg-language="{languages_str}" '
+                        f'tvg-language="{primary_language}" '
                         f'group-title="{group_title}"')
                 
+                # Add headers if they exist
                 if ua: line += f' http-user-agent="{ua}"'
                 if ref: line += f' http-referrer="{ref}"'
                 
@@ -114,7 +115,7 @@ def main():
                 f.write(f"{url}\n\n")
                 count += 1
 
-    print(f"Done! M3U file created with {count} entries.")
+    print(f"Success! {OUTPUT_FILE} created with {count} entries.")
 
 if __name__ == "__main__":
     main()
