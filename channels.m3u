@@ -1384,6 +1384,9 @@ https://live-hls-v3-aja.getaj.net/AJA-V3/index.m3u8
 https://live-hls-web-aja.getaj.net/AJA/index.m3u8
 
 #EXTINF:-1 tvg-id="AlJazeera.qa" tvg-name="Al Jazeera" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/AL_Jazeera.png" tvg-country="QA" tvg-language="Arabic" group-title="News",Al Jazeera
+https://viamotionhsi.netplus.ch/live/eds/aljazeera/browser-HLS8/aljazeera.m3u8
+
+#EXTINF:-1 tvg-id="AlJazeera.qa" tvg-name="Al Jazeera" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/AL_Jazeera.png" tvg-country="QA" tvg-language="Arabic" group-title="News",Al Jazeera
 https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8
 
 #EXTINF:-1 tvg-id="AlJazeera.qa" tvg-name="Al Jazeera" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/AL_Jazeera.png" tvg-country="QA" tvg-language="Arabic" group-title="News",Al Jazeera
@@ -1397,9 +1400,6 @@ https://d1cy85syyhvqz5.cloudfront.net/v1/master/7b67fbda7ab859400a821e9aa0deda20
 
 #EXTINF:-1 tvg-id="AlJazeera.qa" tvg-name="Al Jazeera" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/AL_Jazeera.png" tvg-country="QA" tvg-language="Arabic" group-title="News",Al Jazeera
 https://dash4.antik.sk/live/test_aljazeera_eng/playlist.m3u8
-
-#EXTINF:-1 tvg-id="AlJazeera.qa" tvg-name="Al Jazeera" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/AL_Jazeera.png" tvg-country="QA" tvg-language="Arabic" group-title="News",Al Jazeera
-https://viamotionhsi.netplus.ch/live/eds/aljazeera/browser-HLS8/aljazeera.m3u8
 
 #EXTINF:-1 tvg-id="AlJazeeraDocumentary.qa" tvg-name="Al Jazeera Documentary" tvg-logo="https://i.imgur.com/5dNJlLo.png" tvg-country="QA" tvg-language="Arabic" group-title="Documentary",Al Jazeera Documentary
 https://live-hls-apps-ajd-fa.getaj.net/AJD/index.m3u8
@@ -2463,8 +2463,11 @@ https://ams.juraganstreaming.com:5443/LiveApp/streams/ashiiltv2.m3u8
 #EXTINF:-1 tvg-id="AshiilTV.id" tvg-name="Ashiil TV" tvg-logo="https://i.imgur.com/bTktkcr.png" tvg-country="ID" tvg-language="Indonesian" group-title="Religious",Ashiil TV
 https://wahyu1ptv.pages.dev/AshiilTV-HD.m3u8
 
-#EXTINF:-1 tvg-id="AsianBox.mn" tvg-name="AsianBox" tvg-logo="https://i.imgur.com/WAYZSgx.png" tvg-country="MN" tvg-language="Mongolian" group-title="Entertainment",AsianBox
+#EXTINF:-1 tvg-id="AsianBox.mn" tvg-name="AsianBox" tvg-logo="https://i.imgur.com/WAYZSgx.png" tvg-country="MN" tvg-language="Mongolian" group-title="Entertainment" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",AsianBox
 https://cdn4.skygo.mn/live/disk1/AsianBOX/HLSv3-FTA/AsianBOX.m3u8
+
+#EXTINF:-1 tvg-id="AsianBox.mn" tvg-name="AsianBox" tvg-logo="https://i.imgur.com/WAYZSgx.png" tvg-country="MN" tvg-language="Mongolian" group-title="Entertainment" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",AsianBox
+https://cdn4.skygo.mn/live/disk1/AsianBOX/DASH-FTA/AsianBOX.mpd
 
 #EXTINF:-1 tvg-id="AsianCultureTV.us" tvg-name="Asian Culture TV" tvg-logo="https://i.imgur.com/o1icKZu.png" tvg-country="US" tvg-language="English" group-title="General",Asian Culture TV
 https://cdn.vegasplus.us/vegas/actv/playlist.m3u8
@@ -3123,7 +3126,7 @@ https://vs-hls-pushb-ww.live.cf.md.bbci.co.uk/x=4/i=urn:bbc:pips:service:bbc_ara
 #EXTINF:-1 tvg-id="BBCDrama.uk" tvg-name="BBC Drama" tvg-logo="https://i.imgur.com/HctHhLL.png" tvg-country="UK" tvg-language="French" group-title="Series",BBC Drama
 https://amg00793-amg00793c40-rakuten-es-5444.playouts.now.amagi.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="BBCEarth.uk" tvg-name="BBC Earth" tvg-logo="https://i.imgur.com/nGSsUd4.png" tvg-country="UK" tvg-language="English" group-title="Documentary",BBC Earth
+#EXTINF:-1 tvg-id="BBCEarth.uk" tvg-name="BBC Earth" tvg-logo="https://i.imgur.com/nGSsUd4.png" tvg-country="UK" tvg-language="English" group-title="Documentary" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",BBC Earth
 https://cdn4.skygo.mn/live/disk1/BBC_earth/HLSv3-FTA/BBC_earth.m3u8
 
 #EXTINF:-1 tvg-id="BBCEarth.uk" tvg-name="BBC Earth" tvg-logo="https://i.imgur.com/nGSsUd4.png" tvg-country="UK" tvg-language="English" group-title="Documentary",BBC Earth
@@ -3159,7 +3162,7 @@ https://viamotionhsi.netplus.ch/live/eds/bbc4cbeebies/browser-HLS8/bbc4cbeebies.
 #EXTINF:-1 tvg-id="BBCFourCBeebies.uk" tvg-name="BBC Four/CBeebies" tvg-logo="https://svgmix.com/uploads/95f4f8-cbeebies-bbc-four.svg" tvg-country="UK" tvg-language="English" group-title="Kids",BBC Four/CBeebies
 https://viamotionhsi.netplus.ch/live/eds/bbc4cbeebies/browser-dash/bbc4cbeebies.mpd
 
-#EXTINF:-1 tvg-id="BBCLifestyle.uk" tvg-name="BBC Lifestyle" tvg-logo="https://i.imgur.com/9mzJJ3y.png" tvg-country="UK" tvg-language="Indonesian" group-title="Lifestyle",BBC Lifestyle
+#EXTINF:-1 tvg-id="BBCLifestyle.uk" tvg-name="BBC Lifestyle" tvg-logo="https://i.imgur.com/9mzJJ3y.png" tvg-country="UK" tvg-language="Indonesian" group-title="Lifestyle" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",BBC Lifestyle
 https://cdn4.skygo.mn/live/disk1/BBC_lifestyle/HLSv3-FTA/BBC_lifestyle.m3u8
 
 #EXTINF:-1 tvg-id="BBCNews.uk" tvg-name="BBC News" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_BBC_NEWS/images/LOGO_HD/image.png" tvg-country="UK" tvg-language="English" group-title="News",BBC News
@@ -3189,17 +3192,17 @@ https://vs-hls-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_ch
 #EXTINF:-1 tvg-id="BBCNews.uk" tvg-name="BBC News" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_BBC_NEWS/images/LOGO_HD/image.png" tvg-country="UK" tvg-language="English" group-title="News",BBC News
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/65d92a8c8b24c80008e285c0/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=affbdbfa-5fa3-48af-8369-57c005daef42&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=42d33420-ef8b-4af9-a6f6-30956f3765df
 
-#EXTINF:-1 tvg-id="BBCNews.uk" tvg-name="BBC News" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_BBC_NEWS/images/LOGO_HD/image.png" tvg-country="UK" tvg-language="English" group-title="News",BBC News
+#EXTINF:-1 tvg-id="BBCNews.uk" tvg-name="BBC News" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_BBC_NEWS/images/LOGO_HD/image.png" tvg-country="UK" tvg-language="English" group-title="News" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",BBC News
 https://cdn4.skygo.mn/live/disk1/BBC_News/HLSv3-FTA/BBC_News.m3u8
 
 #EXTINF:-1 tvg-id="BBCNews.uk" tvg-name="BBC News" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_BBC_NEWS/images/LOGO_HD/image.png" tvg-country="UK" tvg-language="English" group-title="News",BBC News
 https://tv.ddns.vn/tv/bbcworldnews/index.m3u8
 
 #EXTINF:-1 tvg-id="BBCNews.uk" tvg-name="BBC News" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_BBC_NEWS/images/LOGO_HD/image.png" tvg-country="UK" tvg-language="English" group-title="News",BBC News
-https://dash2.antik.sk/live/test_bbc_world/playlist.m3u8
+https://viamotionhsi.netplus.ch/live/eds/bbcworld/browser-HLS8/bbcworld.m3u8
 
 #EXTINF:-1 tvg-id="BBCNews.uk" tvg-name="BBC News" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_BBC_NEWS/images/LOGO_HD/image.png" tvg-country="UK" tvg-language="English" group-title="News",BBC News
-https://viamotionhsi.netplus.ch/live/eds/bbcworld/browser-HLS8/bbcworld.m3u8
+https://dash2.antik.sk/live/test_bbc_world/playlist.m3u8
 
 #EXTINF:-1 tvg-id="BBCNewsPashto.uk" tvg-name="BBC News Pashto" tvg-logo="https://static.files.bbci.co.uk/ws/simorgh-assets/public/pashto/images/metadata/poster-1024x576.png" tvg-country="UK" tvg-language="Pashto" group-title="Other",BBC News Pashto
 https://vs-cmaf-pushb-ww.live.cf.md.bbci.co.uk/x=4/i=urn:bbc:pips:service:bbc_afghan_tv/pc_hd_abr_v2.mpd
@@ -3598,10 +3601,10 @@ https://x.canlitvapp.com/u-bbc2/index.m3u8
 https://viamotionhsi.netplus.ch/live/eds/bbc2/browser-HLS8/bbc2.m3u8
 
 #EXTINF:-1 tvg-id="BBCTwo.uk" tvg-name="BBC Two" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/BBC_Two_logo_2021.svg/512px-BBC_Two_logo_2021.svg.png" tvg-country="UK" tvg-language="English" group-title="General",BBC Two
-https://streamer.nexyl.uk/69ef899e-8ca9-4537-9f1a-fe8b4216afbb.m3u8
+https://viamotionhsi.netplus.ch/live/eds/bbc2/browser-dash/bbc2.mpd
 
 #EXTINF:-1 tvg-id="BBCTwo.uk" tvg-name="BBC Two" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/BBC_Two_logo_2021.svg/512px-BBC_Two_logo_2021.svg.png" tvg-country="UK" tvg-language="English" group-title="General",BBC Two
-https://viamotionhsi.netplus.ch/live/eds/bbc2/browser-dash/bbc2.mpd
+https://streamer.nexyl.uk/69ef899e-8ca9-4537-9f1a-fe8b4216afbb.m3u8
 
 #EXTINF:-1 tvg-id="BBCTwo.uk" tvg-name="BBC Two" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/BBC_Two_logo_2021.svg/512px-BBC_Two_logo_2021.svg.png" tvg-country="UK" tvg-language="English" group-title="General",BBC Two
 https://vs-cmaf-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_two_hd/iptv_mse_v0_hevc.mpd
@@ -3898,10 +3901,10 @@ https://d1ib1gsg71oarf.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68
 https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_ALSACE/index.m3u8?end=END&start=LIVE
 
 #EXTINF:-1 tvg-id="BFMBusiness.fr" tvg-name="BFM Business" tvg-logo="https://i.imgur.com/psqIHn4.png" tvg-country="FR" tvg-language="French" group-title="Business",BFM Business
-https://live-cdn-stream-euw1.bfmb.bct.nextradiotv.com/master.m3u8
+https://viamotionhsi.netplus.ch/live/eds/bfmbusiness/browser-HLS8/bfmbusiness.m3u8
 
 #EXTINF:-1 tvg-id="BFMBusiness.fr" tvg-name="BFM Business" tvg-logo="https://i.imgur.com/psqIHn4.png" tvg-country="FR" tvg-language="French" group-title="Business",BFM Business
-https://viamotionhsi.netplus.ch/live/eds/bfmbusiness/browser-HLS8/bfmbusiness.m3u8
+https://live-cdn-stream-euw1.bfmb.bct.nextradiotv.com/master.m3u8
 
 #EXTINF:-1 tvg-id="BFMBusiness.fr" tvg-name="BFM Business" tvg-logo="https://i.imgur.com/psqIHn4.png" tvg-country="FR" tvg-language="French" group-title="Business" http-user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Business
 https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_BUSINESS/index.m3u8?end=END&start=LIVE
@@ -3937,10 +3940,10 @@ https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_NORMANDIE/index.m3u8?end=END&sta
 https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_TECHANDCO/index.m3u8?end=END&start=LIVE
 
 #EXTINF:-1 tvg-id="BFMTV.fr" tvg-name="BFM TV" tvg-logo="https://i.imgur.com/YJCcczD.png" tvg-country="FR" tvg-language="French" group-title="News",BFM TV
-https://live-cdn-stream-euw1.bfmtv.bct.nextradiotv.com/master.m3u8
+https://viamotionhsi.netplus.ch/live/eds/bfmtv/browser-HLS8/bfmtv.m3u8
 
 #EXTINF:-1 tvg-id="BFMTV.fr" tvg-name="BFM TV" tvg-logo="https://i.imgur.com/YJCcczD.png" tvg-country="FR" tvg-language="French" group-title="News",BFM TV
-https://viamotionhsi.netplus.ch/live/eds/bfmtv/browser-HLS8/bfmtv.m3u8
+https://live-cdn-stream-euw1.bfmtv.bct.nextradiotv.com/master.m3u8
 
 #EXTINF:-1 tvg-id="BFMTV.fr" tvg-name="BFM TV" tvg-logo="https://i.imgur.com/YJCcczD.png" tvg-country="FR" tvg-language="French" group-title="News" http-user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM TV
 https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_TV/index.m3u8?end=END&start=LIVE
@@ -4168,10 +4171,10 @@ https://bloomberg.com/media-manifest/streams/aus.m3u8
 https://bloomberg.com/media-manifest/streams/eu-event.m3u8
 
 #EXTINF:-1 tvg-id="BloombergTV.us" tvg-name="Bloomberg TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Bloomberg_TV.png" tvg-country="US" tvg-language="English" group-title="Business",Bloomberg TV
-https://bloomberg.com/media-manifest/streams/eu.m3u8
+https://viamotionhsi.netplus.ch/live/eds/bloomberg/browser-HLS8/bloomberg.m3u8
 
 #EXTINF:-1 tvg-id="BloombergTV.us" tvg-name="Bloomberg TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Bloomberg_TV.png" tvg-country="US" tvg-language="English" group-title="Business",Bloomberg TV
-https://viamotionhsi.netplus.ch/live/eds/bloomberg/browser-HLS8/bloomberg.m3u8
+https://bloomberg.com/media-manifest/streams/eu.m3u8
 
 #EXTINF:-1 tvg-id="BloombergTV.us" tvg-name="Bloomberg TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Bloomberg_TV.png" tvg-country="US" tvg-language="English" group-title="Business",Bloomberg TV
 https://bloomberg.com/media-manifest/streams/us-event.m3u8
@@ -4200,8 +4203,11 @@ https://bloomberg.com/media-manifest/streams/us.m3u8
 #EXTINF:-1 tvg-id="BloombergTV.us" tvg-name="Bloomberg TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Bloomberg_TV.png" tvg-country="US" tvg-language="English" group-title="Business",Bloomberg TV
 https://aegis-cloudfront-1.tubi.video/de29234d-1a53-4cf9-b6ba-9cf412b66d76/playlist.m3u8
 
-#EXTINF:-1 tvg-id="BloombergTVMongolia.mn" tvg-name="Bloomberg TV Mongolia" tvg-logo="https://i.imgur.com/OuogLHx.png" tvg-country="MN" tvg-language="Mongolian" group-title="Business",Bloomberg TV Mongolia
+#EXTINF:-1 tvg-id="BloombergTVMongolia.mn" tvg-name="Bloomberg TV Mongolia" tvg-logo="https://i.imgur.com/OuogLHx.png" tvg-country="MN" tvg-language="Mongolian" group-title="Business" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",Bloomberg TV Mongolia
 https://cdn4.skygo.mn/live/disk1/BloombergMon/HLSv3-FTA/BloombergMon.m3u8
+
+#EXTINF:-1 tvg-id="BloombergTVMongolia.mn" tvg-name="Bloomberg TV Mongolia" tvg-logo="https://i.imgur.com/OuogLHx.png" tvg-country="MN" tvg-language="Mongolian" group-title="Business" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",Bloomberg TV Mongolia
+https://cdn4.skygo.mn/live/disk1/BloombergMon/DASH-FTA/BloombergMon.mpd
 
 #EXTINF:-1 tvg-id="BlueBloods.us" tvg-name="Blue Bloods" tvg-logo="https://images.pluto.tv/channels/61b3b8c645b45d0007a9bb8d/colorLogoSVG.svg" tvg-country="US" tvg-language="English" group-title="Series",Blue Bloods
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/61b3b8c645b45d0007a9bb8d/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=affbdbfa-5fa3-48af-8369-57c005daef42&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=0583fd0d-5807-4e28-b040-34e07e65002c
@@ -4599,8 +4605,11 @@ https://reflect-stream-bronxnet.cablecast.tv/live-16/live/stream-1/live.m3u8
 #EXTINF:-1 tvg-id="BYUTV.us" tvg-name="BYU TV" tvg-logo="https://i.imgur.com/mruGyuu.png" tvg-country="US" tvg-language="English" group-title="Other",BYU TV
 https://amg02604-byutv-amg02604c2-firetv-us-4981.playouts.now.amagi.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="C1.mn" tvg-name="C1" tvg-logo="https://i.imgur.com/v1mHG5x.png" tvg-country="MN" tvg-language="Mongolian" group-title="General",C1
+#EXTINF:-1 tvg-id="C1.mn" tvg-name="C1" tvg-logo="https://i.imgur.com/v1mHG5x.png" tvg-country="MN" tvg-language="Mongolian" group-title="General" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",C1
 https://cdn4.skygo.mn/live/disk1/C1/HLSv3-FTA/C1.m3u8
+
+#EXTINF:-1 tvg-id="C1.mn" tvg-name="C1" tvg-logo="https://i.imgur.com/v1mHG5x.png" tvg-country="MN" tvg-language="Mongolian" group-title="General" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",C1
+https://cdn4.skygo.mn/live/disk1/C1/DASH-FTA/C1.mpd
 
 #EXTINF:-1 tvg-id="C31Melbourne.au" tvg-name="C31 Melbourne" tvg-logo="https://i.imgur.com/Ge1EutY.png" tvg-country="AU" tvg-language="English" group-title="General",C31 Melbourne
 https://d1k6kax80wecy5.cloudfront.net/RLnAKY/index.m3u8
@@ -5469,7 +5478,7 @@ https://streaming.televizor-24-tochka.ru/live/232.m3u8
 #EXTINF:-1 tvg-id="Carousel.ru" tvg-name="Carousel" tvg-logo="https://i.imgur.com/4wmnx1W.png" tvg-country="RU" tvg-language="Russian" group-title="Kids" http-user-agent="WINK/1.44.1 (AndroidTV/9) HlsWinkPlayer",Carousel
 https://zabava-htlive.cdn.ngenix.net/hls/CH_KARUSEL/variant.m3u8
 
-#EXTINF:-1 tvg-id="CarouselInternational.ru" tvg-name="Carousel International" tvg-logo="https://i.imgur.com/DnlngRZ.png" tvg-country="RU" tvg-language="Russian" group-title="Kids",Carousel International
+#EXTINF:-1 tvg-id="CarouselInternational.ru" tvg-name="Carousel International" tvg-logo="https://i.imgur.com/DnlngRZ.png" tvg-country="RU" tvg-language="Russian" group-title="Kids" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",Carousel International
 https://cdn4.skygo.mn/live/disk1/Karusel/HLSv3-FTA/Karusel.m3u8
 
 #EXTINF:-1 tvg-id="CartagoMediosTV.cr" tvg-name="Cartago Medios TV" tvg-logo="https://i.imgur.com/Vcd40AL.png" tvg-country="CR" tvg-language="Spanish" group-title="General",Cartago Medios TV
@@ -5583,7 +5592,7 @@ https://vs-cmaf-pushb-uk.live.fastly.md.bbci.co.uk/x=4/i=urn:bbc:pips:service:cb
 #EXTINF:-1 tvg-id="CBeebies.uk" tvg-name="CBeebies" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_CBEEBIES/images/LOGO_HD/image.png" tvg-country="UK" tvg-language="English" group-title="Kids",CBeebies
 https://vs-hls-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:cbeebies_hd/mobile_wifi_main_hd_abr_v2.m3u8
 
-#EXTINF:-1 tvg-id="CBeebiesAsia.uk" tvg-name="CBeebies Asia" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/1/16/CBeebies.svg/512px-CBeebies.svg.png" tvg-country="UK" tvg-language="English" group-title="Kids",CBeebies Asia
+#EXTINF:-1 tvg-id="CBeebiesAsia.uk" tvg-name="CBeebies Asia" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/1/16/CBeebies.svg/512px-CBeebies.svg.png" tvg-country="UK" tvg-language="English" group-title="Kids" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",CBeebies Asia
 https://cdn4.skygo.mn/live/disk1/Cbeebies/HLSv3-FTA/Cbeebies.m3u8
 
 #EXTINF:-1 tvg-id="CBETDT.ca" tvg-name="CBET-DT" tvg-logo="https://i.imgur.com/NFts1uU.png" tvg-country="CA" tvg-language="English" group-title="General",CBET-DT
@@ -5904,8 +5913,14 @@ https://5790d294af2dc.streamlock.net/cenovision/cenovision/playlist.m3u8
 #EXTINF:-1 tvg-id="CENTelevision.cm" tvg-name="CEN Television" tvg-logo="https://i.ibb.co/2vJfdgN/unnamed.jpg" tvg-country="CM" tvg-language="French" group-title="General",CEN Television
 https://strhlslb01.streamakaci.tv/cen/cen-multi/playlist.m3u8
 
-#EXTINF:-1 tvg-id="CentralTV.mn" tvg-name="Central TV" tvg-logo="https://i.imgur.com/E9wAUrT.png" tvg-country="MN" tvg-language="Mongolian" group-title="General",Central TV
+#EXTINF:-1 tvg-id="CentralTV.mn" tvg-name="Central TV" tvg-logo="https://i.imgur.com/E9wAUrT.png" tvg-country="MN" tvg-language="Mongolian" group-title="General" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",Central TV
 https://cdn4.skygo.mn/live/disk1/Ekh_Oron/HLSv3-FTA/Ekh_Oron.m3u8
+
+#EXTINF:-1 tvg-id="CentralTV.mn" tvg-name="Central TV" tvg-logo="https://i.imgur.com/E9wAUrT.png" tvg-country="MN" tvg-language="Mongolian" group-title="General" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",Central TV
+https://cdn1.skygo.mn/live/disk1/Ekh_Oron/HLS-FTA/Ekh_Oron.m3u8
+
+#EXTINF:-1 tvg-id="CentralTV.mn" tvg-name="Central TV" tvg-logo="https://i.imgur.com/E9wAUrT.png" tvg-country="MN" tvg-language="Mongolian" group-title="General" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",Central TV
+https://cdn4.skygo.mn/live/disk1/Ekh_Oron/DASH-FTA/Ekh_Oron.mpd
 
 #EXTINF:-1 tvg-id="CerritosTV3.us" tvg-name="Cerritos TV3" tvg-logo="https://i.imgur.com/huCBOIy.png" tvg-country="US" tvg-language="English" group-title="General",Cerritos TV3
 https://cdn3.wowza.com/5/UWpORHhLSEs5SkJs/cerritos/G0010_002/playlist.m3u8
@@ -6060,8 +6075,11 @@ https://kali.vdopanel.com:3660/live/vj6jlam1rlive.m3u8
 #EXTINF:-1 tvg-id="Channel10.us" tvg-name="Channel 10" tvg-logo="https://spcity.org/ImageRepository/Document?documentID=4246" tvg-country="US" tvg-language="English" group-title="Legislative",Channel 10
 https://cdn3.wowza.com/5/cFh0V0QwUVc4SDl2/santa-paula/G0930_002/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Channel11.mn" tvg-name="Channel 11" tvg-logo="https://i.imgur.com/GztOajC.png" tvg-country="MN" tvg-language="Mongolian" group-title="General",Channel 11
+#EXTINF:-1 tvg-id="Channel11.mn" tvg-name="Channel 11" tvg-logo="https://i.imgur.com/GztOajC.png" tvg-country="MN" tvg-language="Mongolian" group-title="General" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",Channel 11
 https://cdn4.skygo.mn/live/disk1/Channel11/HLSv3-FTA/Channel11.m3u8
+
+#EXTINF:-1 tvg-id="Channel11.mn" tvg-name="Channel 11" tvg-logo="https://i.imgur.com/GztOajC.png" tvg-country="MN" tvg-language="Mongolian" group-title="General" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",Channel 11
+https://cdn4.skygo.mn/live/disk1/Channel11/DASH-FTA/Channel11.mpd
 
 #EXTINF:-1 tvg-id="Channel11.ua" tvg-name="Channel 11" tvg-logo="https://i.imgur.com/y78saaG.png" tvg-country="UA" tvg-language="Ukrainian" group-title="General" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0",Channel 11
 https://11tv-dp.cdn-04.cosmonova.net.ua/hls/11tv-dp_ua_hi/index.m3u8
@@ -6405,8 +6423,14 @@ https://zylo-cinefriki-rakuten.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="CineLife.us" tvg-name="CineLife" tvg-logo="https://i.imgur.com/RIUNuMQ.png" tvg-country="US" tvg-language="English" group-title="Lifestyle",CineLife
 https://magnolia-cinelife.amagi.tv/hls/amagi_hls_data_magnoliaA-cinelife-oando/CDN/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Cinema.mn" tvg-name="Cinema" tvg-logo="https://i.imgur.com/yib6dM2.png" tvg-country="MN" tvg-language="Mongolian" group-title="Movies",Cinema
+#EXTINF:-1 tvg-id="Cinema.mn" tvg-name="Cinema" tvg-logo="https://i.imgur.com/yib6dM2.png" tvg-country="MN" tvg-language="Mongolian" group-title="Movies" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",Cinema
 https://cdn4.skygo.mn/live/disk1/CinemaTV/HLSv3-FTA/CinemaTV.m3u8
+
+#EXTINF:-1 tvg-id="Cinema.mn" tvg-name="Cinema" tvg-logo="https://i.imgur.com/yib6dM2.png" tvg-country="MN" tvg-language="Mongolian" group-title="Movies" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",Cinema
+https://cdn1.skygo.mn/live/disk1/CinemaTV/HLS-FTA/CinemaTV.m3u8
+
+#EXTINF:-1 tvg-id="Cinema.mn" tvg-name="Cinema" tvg-logo="https://i.imgur.com/yib6dM2.png" tvg-country="MN" tvg-language="Mongolian" group-title="Movies" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",Cinema
+https://cdn4.skygo.mn/live/disk1/CinemaTV/DASH-FTA/CinemaTV.mpd
 
 #EXTINF:-1 tvg-id="Cinema.ru" tvg-name="Cinema" tvg-logo="https://i.imgur.com/b5e9qUA.png" tvg-country="RU" tvg-language="Russian" group-title="Movies",Cinema
 http://catchup.videoline.ru/cinema/playlist.m3u8
@@ -6871,10 +6895,10 @@ https://cdn.amelbasoluciones.co:8081/cnctulualive/index.m3u8
 http://125.210.152.18:9090/live/FXZL_750.m3u8
 
 #EXTINF:-1 tvg-id="CNews.fr" tvg-name="CNews" tvg-logo="https://i.imgur.com/sSNhk2g.png" tvg-country="FR" tvg-language="French" group-title="News",CNews
-https://raw.githubusercontent.com/LeBazarDeBryan/XTVZ_/main/Stream/Live/CNews.m3u8
+https://viamotionhsi.netplus.ch/live/eds/itele/browser-HLS8/itele.m3u8
 
 #EXTINF:-1 tvg-id="CNews.fr" tvg-name="CNews" tvg-logo="https://i.imgur.com/sSNhk2g.png" tvg-country="FR" tvg-language="French" group-title="News",CNews
-https://viamotionhsi.netplus.ch/live/eds/itele/browser-HLS8/itele.m3u8
+https://raw.githubusercontent.com/LeBazarDeBryan/XTVZ_/main/Stream/Live/CNews.m3u8
 
 #EXTINF:-1 tvg-id="CNews.fr" tvg-name="CNews" tvg-logo="https://i.imgur.com/sSNhk2g.png" tvg-country="FR" tvg-language="French" group-title="News",CNews
 https://raw.githubusercontent.com/Sibprod/streams/main/ressources/dm/py/hls/cnews.m3u8
@@ -7507,13 +7531,13 @@ https://swrdasdingvr-hls.akamaized.net/hls/live/2018681/dasdingvr/master.m3u8
 https://daserste-live.ard-mcdn.de/daserste/live/hls/int/master.m3u8
 
 #EXTINF:-1 tvg-id="DasErste.de" tvg-name="Das Erste" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/ARD_Dachmarke_2014.svg/512px-ARD_Dachmarke_2014.svg.png" tvg-country="DE" tvg-language="German" group-title="General",Das Erste
-https://derste247liveint.akamaized.net/hls/live/662735/daserste_int/master.m3u8
-
-#EXTINF:-1 tvg-id="DasErste.de" tvg-name="Das Erste" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/ARD_Dachmarke_2014.svg/512px-ARD_Dachmarke_2014.svg.png" tvg-country="DE" tvg-language="German" group-title="General",Das Erste
 https://viamotionhsi.netplus.ch/live/eds/daserstehd/browser-dash/daserstehd.mpd
 
 #EXTINF:-1 tvg-id="DasErste.de" tvg-name="Das Erste" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/ARD_Dachmarke_2014.svg/512px-ARD_Dachmarke_2014.svg.png" tvg-country="DE" tvg-language="German" group-title="General",Das Erste
 https://viamotionhsi.netplus.ch/live/eds/daserstehd/browser-HLS8/daserstehd.m3u8
+
+#EXTINF:-1 tvg-id="DasErste.de" tvg-name="Das Erste" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/ARD_Dachmarke_2014.svg/512px-ARD_Dachmarke_2014.svg.png" tvg-country="DE" tvg-language="German" group-title="General",Das Erste
+https://derste247liveint.akamaized.net/hls/live/662735/daserste_int/master.m3u8
 
 #EXTINF:-1 tvg-id="DasturxonTV.uz" tvg-name="Dasturxon TV" tvg-logo="https://i.imgur.com/APM2ej5.jpeg" tvg-country="UZ" tvg-language="Uzbek" group-title="General",Dasturxon TV
 https://stream8.cinerama.uz/1206/tracks-v1a1/playlist.m3u8
@@ -7966,10 +7990,10 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/64733/64733_264_live.
 https://jmp2.uk/stvp-CHAJ0500413A
 
 #EXTINF:-1 tvg-id="DeluxeMusic.de" tvg-name="Deluxe Music" tvg-logo="https://i.imgur.com/HimuPPb.png" tvg-country="DE" tvg-language="German" group-title="Music",Deluxe Music
-https://sdn-global-live-streaming-packager-cache.3qsdn.com/13456/13456_264_live.m3u8
+https://viamotionhsi.netplus.ch/live/eds/deluxemusic/browser-HLS8/deluxemusic.m3u8
 
 #EXTINF:-1 tvg-id="DeluxeMusic.de" tvg-name="Deluxe Music" tvg-logo="https://i.imgur.com/HimuPPb.png" tvg-country="DE" tvg-language="German" group-title="Music",Deluxe Music
-https://viamotionhsi.netplus.ch/live/eds/deluxemusic/browser-HLS8/deluxemusic.m3u8
+https://sdn-global-live-streaming-packager-cache.3qsdn.com/13456/13456_264_live.m3u8
 
 #EXTINF:-1 tvg-id="DeluxeRap.de" tvg-name="Deluxe Rap" tvg-logo="https://i.imgur.com/s3h67hx.png" tvg-country="DE" tvg-language="English" group-title="Music",Deluxe Rap
 https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.m3u8
@@ -8340,7 +8364,7 @@ https://streaming.televizor-24-tochka.ru/live/17.m3u8
 #EXTINF:-1 tvg-id="Domashniy.ru" tvg-name="Domashniy" tvg-logo="https://i.imgur.com/XVRwgom.png" tvg-country="RU" tvg-language="Russian" group-title="Lifestyle" http-user-agent="WINK/1.44.1 (AndroidTV/9) HlsWinkPlayer",Domashniy
 https://zabava-htlive.cdn.ngenix.net/hls/CH_DOMASHNIY/variant.m3u8
 
-#EXTINF:-1 tvg-id="DomashniyInternational.ru" tvg-name="Domashniy International" tvg-logo="https://i.imgur.com/nf7GRXb.png" tvg-country="RU" tvg-language="Russian" group-title="Lifestyle",Domashniy International
+#EXTINF:-1 tvg-id="DomashniyInternational.ru" tvg-name="Domashniy International" tvg-logo="https://i.imgur.com/nf7GRXb.png" tvg-country="RU" tvg-language="Russian" group-title="Lifestyle" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",Domashniy International
 https://cdn4.skygo.mn/live/disk1/Domashni/HLSv3-FTA/Domashni.m3u8
 
 #EXTINF:-1 tvg-id="Domkino.ru" tvg-name="Dom kino" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%D0%B0_%D0%94%D0%BE%D0%BC_%D0%9A%D0%B8%D0%BD%D0%BE.png/512px-%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%D0%B0_%D0%94%D0%BE%D0%BC_%D0%9A%D0%B8%D0%BD%D0%BE.png" tvg-country="RU" tvg-language="Russian" group-title="Movies",Dom kino
@@ -8412,8 +8436,11 @@ https://lb1-live-mv.v2h-cdn.com/hls/fdee/mvmalldd/mvmalldd.m3u8
 #EXTINF:-1 tvg-id="DreamTurk.tr" tvg-name="Dream Turk" tvg-logo="https://i.imgur.com/vJ8VaZi.png" tvg-country="TR" tvg-language="Turkish" group-title="Music",Dream Turk
 https://live.duhnet.tv/S2/HLS_LIVE/dreamturknp/playlist.m3u8
 
-#EXTINF:-1 tvg-id="DreamTV.mn" tvg-name="DreamTV" tvg-logo="https://i.imgur.com/YPbvzgV.png" tvg-country="MN" tvg-language="Mongolian" group-title="Entertainment",DreamTV
+#EXTINF:-1 tvg-id="DreamTV.mn" tvg-name="DreamTV" tvg-logo="https://i.imgur.com/YPbvzgV.png" tvg-country="MN" tvg-language="Mongolian" group-title="Entertainment" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",DreamTV
 https://cdn4.skygo.mn/live/disk1/Dreambox/HLSv3-FTA/Dreambox.m3u8
+
+#EXTINF:-1 tvg-id="DreamTV.mn" tvg-name="DreamTV" tvg-logo="https://i.imgur.com/YPbvzgV.png" tvg-country="MN" tvg-language="Mongolian" group-title="Entertainment" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",DreamTV
+https://cdn4.skygo.mn/live/disk1/Dreambox/DASH-FTA/Dreambox.mpd
 
 #EXTINF:-1 tvg-id="DreamTV.ug" tvg-name="Dream TV" tvg-logo="https://i.imgur.com/XRUDhqQ.png" tvg-country="UG" tvg-language="English" group-title="Religious",Dream TV
 https://streamfi-dreamtv1.zettawiseroutes.com:8181/hls/stream.m3u8
@@ -8595,8 +8622,11 @@ https://tvpass.org/live/EEast/sd
 #EXTINF:-1 tvg-id="E24.in" tvg-name="E 24" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_E24/images/LOGO_HD/image.png" tvg-country="IN" tvg-language="Hindi" group-title="Entertainment",E 24
 https://mumt04.tangotv.in/E24/index.m3u8
 
-#EXTINF:-1 tvg-id="EagleNews.mn" tvg-name="Eagle News" tvg-logo="https://i.imgur.com/2oqXpve.jpg" tvg-country="MN" tvg-language="Mongolian" group-title="News",Eagle News
+#EXTINF:-1 tvg-id="EagleNews.mn" tvg-name="Eagle News" tvg-logo="https://i.imgur.com/2oqXpve.jpg" tvg-country="MN" tvg-language="Mongolian" group-title="News" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",Eagle News
 https://cdn4.skygo.mn/live/disk1/Eagle/HLSv3-FTA/Eagle.m3u8
+
+#EXTINF:-1 tvg-id="EagleNews.mn" tvg-name="Eagle News" tvg-logo="https://i.imgur.com/2oqXpve.jpg" tvg-country="MN" tvg-language="Mongolian" group-title="News" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",Eagle News
+https://cdn4.skygo.mn/live/disk1/Eagle/DASH-FTA/Eagle.mpd
 
 #EXTINF:-1 tvg-id="EawazTV.ca" tvg-name="Eawaz TV" tvg-logo="https://i.imgur.com/vB4yzen.png" tvg-country="CA" tvg-language="Urdu" group-title="Culture",Eawaz TV
 https://streamer12.vdn.dstreamone.net/saazoawaz/saazoawaz/playlist.m3u8
@@ -8706,10 +8736,10 @@ https://vid2.ecuamedia.net/educatv/live/playlist.m3u8
 #EXTINF:-1 tvg-id="EduPlusTV.do" tvg-name="Edu+ TV" tvg-logo="https://www.vivalivetv.com/public/files/shows/0/1/3610-294x165-FFFFFF.jpg" tvg-country="DO" tvg-language="Spanish" group-title="General",Edu+ TV
 https://vdopanel.jlahozconsulting.com:3720/hybrid/play.m3u8
 
-#EXTINF:-1 tvg-id="EdutainmentTV.mn" tvg-name="Edutainment TV" tvg-logo="https://i.imgur.com/0m8t3vh.png" tvg-country="MN" tvg-language="Mongolian" group-title="Education",Edutainment TV
+#EXTINF:-1 tvg-id="EdutainmentTV.mn" tvg-name="Edutainment TV" tvg-logo="https://i.imgur.com/0m8t3vh.png" tvg-country="MN" tvg-language="Mongolian" group-title="Education" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",Edutainment TV
 https://cdn4.skygo.mn/live/disk1/Education/DASH-FTA/Education.mpd
 
-#EXTINF:-1 tvg-id="EdutainmentTV.mn" tvg-name="Edutainment TV" tvg-logo="https://i.imgur.com/0m8t3vh.png" tvg-country="MN" tvg-language="Mongolian" group-title="Education",Edutainment TV
+#EXTINF:-1 tvg-id="EdutainmentTV.mn" tvg-name="Edutainment TV" tvg-logo="https://i.imgur.com/0m8t3vh.png" tvg-country="MN" tvg-language="Mongolian" group-title="Education" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",Edutainment TV
 https://cdn4.skygo.mn/live/disk1/Education/HLSv3-FTA/Education.m3u8
 
 #EXTINF:-1 tvg-id="EDUTV.rs" tvg-name="EDU TV" tvg-logo="https://i.imgur.com/NE48DJb.png" tvg-country="RS" tvg-language="Serbian" group-title="Education",EDU TV
@@ -9036,6 +9066,9 @@ http://wms.shared.streamshow.it/esperiatv/esperiatv/playlist.m3u8
 #EXTINF:-1 tvg-id="EspirituSantoYFuegoTV.gt" tvg-name="Espiritu Santo Y Fuego TV" tvg-logo="https://i.imgur.com/8mdSWO4.jpg" tvg-country="GT" tvg-language="Spanish" group-title="Religious",Espiritu Santo Y Fuego TV
 https://inliveserver.com:1936/8392/8392/playlist.m3u8
 
+#EXTINF:-1 tvg-id="ESPN8TheOcho.us" tvg-name="ESPN8: The Ocho" tvg-logo="https://images.fubo.tv/channel-config-ui/station-logos/on-dark/espn_8_the_ocho_bw.png" tvg-country="US" tvg-language="English" group-title="Sports",ESPN8: The Ocho
+https://d3b6q2ou5kp8ke.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-vz67vw1bljinm/ESPNTheOcho.m3u8
+
 #EXTINF:-1 tvg-id="ESPNDeportes.us" tvg-name="ESPN Deportes" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/ESPN_Deportes.svg/512px-ESPN_Deportes.svg.png" tvg-country="US" tvg-language="Spanish" group-title="Sports",ESPN Deportes
 https://e3.thetvapp.to/hls/espn-deportes/index.m3u8
 
@@ -9156,8 +9189,11 @@ https://liveingesta318.cdnmedia.tv/tvetvlive/smil:rtmp01.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ETV.gp" tvg-name="ETV" tvg-logo="https://i.imgur.com/m5E2VP0.png" tvg-country="GP" tvg-language="French" group-title="General",ETV
 https://edge12.vedge.infomaniak.com/livecast/ik:etvgp/manifest.m3u8
 
-#EXTINF:-1 tvg-id="ETV.mn" tvg-name="ETV" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/ETV_Mongolia_logo.png/512px-ETV_Mongolia_logo.png" tvg-country="MN" tvg-language="Mongolian" group-title="News",ETV
+#EXTINF:-1 tvg-id="ETV.mn" tvg-name="ETV" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/ETV_Mongolia_logo.png/512px-ETV_Mongolia_logo.png" tvg-country="MN" tvg-language="Mongolian" group-title="News" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",ETV
 https://cdn4.skygo.mn/live/disk1/ETV/HLSv3-FTA/ETV.m3u8
+
+#EXTINF:-1 tvg-id="ETV.mn" tvg-name="ETV" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/ETV_Mongolia_logo.png/512px-ETV_Mongolia_logo.png" tvg-country="MN" tvg-language="Mongolian" group-title="News" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",ETV
+https://cdn4.skygo.mn/live/disk1/ETV/DASH-FTA/ETV.mpd
 
 #EXTINF:-1 tvg-id="ETV.th" tvg-name="ETV" tvg-logo="https://i.imgur.com/HTnQGcs.png" tvg-country="TH" tvg-language="Thai" group-title="Education",ETV
 http://150.95.66.20:1935/live/livestream/playlist.m3u8
@@ -9229,10 +9265,10 @@ https://live.ecomservice.bg/hls/stream.m3u8
 https://viamotionhsi.netplus.ch/live/eds/eurod/browser-HLS8/eurod.m3u8
 
 #EXTINF:-1 tvg-id="EuroD.tr" tvg-name="Euro D" tvg-logo="https://i.imgur.com/x9kHsXo.png" tvg-country="TR" tvg-language="Turkish" group-title="General",Euro D
-https://live.duhnet.tv/S2/HLS_LIVE/eurodnp/playlist.m3u8
+https://viamotionhsi.netplus.ch/live/eds/eurod/browser-dash/eurod.mpd
 
 #EXTINF:-1 tvg-id="EuroD.tr" tvg-name="Euro D" tvg-logo="https://i.imgur.com/x9kHsXo.png" tvg-country="TR" tvg-language="Turkish" group-title="General",Euro D
-https://viamotionhsi.netplus.ch/live/eds/eurod/browser-dash/eurod.mpd
+https://live.duhnet.tv/S2/HLS_LIVE/eurodnp/playlist.m3u8
 
 #EXTINF:-1 tvg-id="EuroIndieMusicChartTV.it" tvg-name="Euro Indie Music Chart TV" tvg-logo="https://i.imgur.com/lF0iofX.png" tvg-country="IT" tvg-language="Italian" group-title="Music",Euro Indie Music Chart TV
 http://178.33.224.197:1935/euroindiemusic/euroindiemusic/playlist.m3u8
@@ -9979,10 +10015,10 @@ https://amg00106-amg00106c1-samsung-nz-4151.playouts.now.amagi.tv/playlist.m3u8
 https://a-cdn.klowdtv.com/live2/france24_720p/playlist.m3u8
 
 #EXTINF:-1 tvg-id="France24.fr" tvg-name="France 24" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_FRANCE_24/images/LOGO_HD/image.png" tvg-country="FR" tvg-language="Arabic" group-title="News",France 24
-https://dash4.antik.sk/live/test_france24_france/playlist.m3u8
+https://viamotionhsi.netplus.ch/live/eds/france24/browser-HLS8/france24.m3u8
 
 #EXTINF:-1 tvg-id="France24.fr" tvg-name="France 24" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_FRANCE_24/images/LOGO_HD/image.png" tvg-country="FR" tvg-language="Arabic" group-title="News",France 24
-https://viamotionhsi.netplus.ch/live/eds/france24/browser-HLS8/france24.m3u8
+https://dash4.antik.sk/live/test_france24_france/playlist.m3u8
 
 #EXTINF:-1 tvg-id="France24.fr" tvg-name="France 24" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_FRANCE_24/images/LOGO_HD/image.png" tvg-country="FR" tvg-language="Arabic" group-title="News",France 24
 https://live.france24.com/hls/live/2037179-b/F24_FR_HI_HLS/master_5000.m3u8
@@ -10057,10 +10093,10 @@ https://viamotionhsi.netplus.ch/live/eds/france5hd/browser-HLS8/france5hd.m3u8
 http://69.64.57.208/france5/mono.m3u8
 
 #EXTINF:-1 tvg-id="Franceinfo.fr" tvg-name="Franceinfo" tvg-logo="https://i.imgur.com/eITXz6A.png" tvg-country="FR" tvg-language="French" group-title="News",Franceinfo
-https://raw.githubusercontent.com/Sibprod/streams/main/ressources/dm/py/hls/franceinfotv.m3u8
+https://viamotionhsi.netplus.ch/live/eds/franceinfo/browser-HLS8/franceinfo.m3u8
 
 #EXTINF:-1 tvg-id="Franceinfo.fr" tvg-name="Franceinfo" tvg-logo="https://i.imgur.com/eITXz6A.png" tvg-country="FR" tvg-language="French" group-title="News",Franceinfo
-https://viamotionhsi.netplus.ch/live/eds/franceinfo/browser-HLS8/franceinfo.m3u8
+https://raw.githubusercontent.com/Sibprod/streams/main/ressources/dm/py/hls/franceinfotv.m3u8
 
 #EXTINF:-1 tvg-id="FranceInter.fr" tvg-name="France Inter" tvg-logo="https://i.imgur.com/MgBeU52.png" tvg-country="FR" tvg-language="French" group-title="General",France Inter
 https://raw.githubusercontent.com/Sibprod/streams/main/ressources/dm/py/hls/franceinter.m3u8
@@ -10119,7 +10155,7 @@ https://streaming.televizor-24-tochka.ru/live/19.m3u8
 #EXTINF:-1 tvg-id="Friday.ru" tvg-name="Friday!" tvg-logo="https://i.imgur.com/UfmlXxe.png" tvg-country="RU" tvg-language="Russian" group-title="Entertainment" http-user-agent="WINK/1.44.1 (AndroidTV/9) HlsWinkPlayer",Friday!
 https://zabava-htlive.cdn.ngenix.net/hls/CH_PYATNIZZA/variant.m3u8
 
-#EXTINF:-1 tvg-id="FridayInternational.ru" tvg-name="Friday! International" tvg-logo="https://i.imgur.com/N2z3EZC.png" tvg-country="RU" tvg-language="Russian" group-title="Entertainment",Friday! International
+#EXTINF:-1 tvg-id="FridayInternational.ru" tvg-name="Friday! International" tvg-logo="https://i.imgur.com/N2z3EZC.png" tvg-country="RU" tvg-language="Russian" group-title="Entertainment" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",Friday! International
 https://cdn4.skygo.mn/live/disk1/Friday/HLSv3-FTA/Friday.m3u8
 
 #EXTINF:-1 tvg-id="Frikanalen.no" tvg-name="Frikanalen" tvg-logo="https://i.imgur.com/rY3Owxl.png" tvg-country="NO" tvg-language="Norwegian" group-title="General",Frikanalen
@@ -10548,8 +10584,11 @@ https://stream.castr.com/6809124f3f3e7e594c63cf15/live_8e5d0b50206a11f0869057644
 #EXTINF:-1 tvg-id="GlobalTV.do" tvg-name="Global TV" tvg-logo="https://i.imgur.com/1rQaROm.png" tvg-country="DO" tvg-language="Spanish" group-title="General",Global TV
 https://stmv4.voxtvhd.com.br/globaltv/globaltv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="GlobalTV.mn" tvg-name="Global TV" tvg-logo="https://i.imgur.com/Es5FX4z.png" tvg-country="MN" tvg-language="Mongolian" group-title="Other",Global TV
+#EXTINF:-1 tvg-id="GlobalTV.mn" tvg-name="Global TV" tvg-logo="https://i.imgur.com/Es5FX4z.png" tvg-country="MN" tvg-language="Mongolian" group-title="Other" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",Global TV
 https://cdn4.skygo.mn/live/disk1/GlobalTV/HLSv3-FTA/GlobalTV.m3u8
+
+#EXTINF:-1 tvg-id="GlobalTV.mn" tvg-name="Global TV" tvg-logo="https://i.imgur.com/Es5FX4z.png" tvg-country="MN" tvg-language="Mongolian" group-title="Other" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",Global TV
+https://cdn4.skygo.mn/live/disk1/GlobalTV/DASH-FTA/GlobalTV.mpd
 
 #EXTINF:-1 tvg-id="GlobalTV.ve" tvg-name="GlobalTV" tvg-logo="https://imgur.com/hzM9D9L.jpg" tvg-country="VE" tvg-language="Spanish" group-title="General",GlobalTV
 https://streamtv.intervenhosting.net:3179/live/globaltvlive.m3u8
@@ -10887,8 +10926,11 @@ https://goliveafrica.media:9998/live/644e07abdc1d3/index.m3u8
 #EXTINF:-1 tvg-id="GTV.gt" tvg-name="GTV" tvg-logo="https://i.imgur.com/gUiIC8E.png" tvg-country="GT" tvg-language="Spanish" group-title="Entertainment",GTV
 https://cdn.streamhispanatv.net:3126/live/genesistvlive.m3u8
 
-#EXTINF:-1 tvg-id="GTV.mn" tvg-name="GTV" tvg-logo="https://i.imgur.com/z18PSIo.png" tvg-country="MN" tvg-language="Mongolian" group-title="Other",GTV
+#EXTINF:-1 tvg-id="GTV.mn" tvg-name="GTV" tvg-logo="https://i.imgur.com/z18PSIo.png" tvg-country="MN" tvg-language="Mongolian" group-title="Other" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",GTV
 https://cdn4.skygo.mn/live/disk1/GTV/HLSv3-FTA/GTV.m3u8
+
+#EXTINF:-1 tvg-id="GTV.mn" tvg-name="GTV" tvg-logo="https://i.imgur.com/z18PSIo.png" tvg-country="MN" tvg-language="Mongolian" group-title="Other" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",GTV
+https://cdn4.skygo.mn/live/disk1/GTV/DASH-FTA/GTV.mpd
 
 #EXTINF:-1 tvg-id="GTV.si" tvg-name="GTV" tvg-logo="https://i.imgur.com/LHChpid.png" tvg-country="SI" tvg-language="Slovenian" group-title="Culture",GTV
 http://91.220.221.60/gtv_hls/gtv_03.m3u8
@@ -10960,10 +11002,10 @@ https://live.gulistannews.in/hls/gul.m3u8
 https://viamotionhsi.netplus.ch/live/eds/gulli/browser-HLS8/gulli.m3u8
 
 #EXTINF:-1 tvg-id="Gulli.fr" tvg-name="Gulli" tvg-logo="https://i.imgur.com/kqYssbW.png" tvg-country="FR" tvg-language="French" group-title="Kids",Gulli
-https://origin-caf900c010ea8046.live.6cloud.fr/out/v1/c65696b42ca34e97a9b5f54758d6dd50/cmaf/hlsfmp4_short_q2hyb21h_gulli_sd_index.m3u8
+https://viamotionhsi.netplus.ch/live/eds/gulli/browser-dash/gulli.mpd
 
 #EXTINF:-1 tvg-id="Gulli.fr" tvg-name="Gulli" tvg-logo="https://i.imgur.com/kqYssbW.png" tvg-country="FR" tvg-language="French" group-title="Kids",Gulli
-https://viamotionhsi.netplus.ch/live/eds/gulli/browser-dash/gulli.mpd
+https://origin-caf900c010ea8046.live.6cloud.fr/out/v1/c65696b42ca34e97a9b5f54758d6dd50/cmaf/hlsfmp4_short_q2hyb21h_gulli_sd_index.m3u8
 
 #EXTINF:-1 tvg-id="GuneydoguTV.tr" tvg-name="Guneydogu TV" tvg-logo="https://i.imgur.com/JT5pp3Y.png" tvg-country="TR" tvg-language="Turkish" group-title="News",Guneydogu TV
 https://edge1.socialsmart.tv/gtv/bant1/playlist.m3u8
@@ -13585,10 +13627,10 @@ http://origin5.mediacdn.ru/live/kidstv/index.m3u8
 https://streamer1.connectto.com/AABC_WEB_1201/index.m3u8
 
 #EXTINF:-1 tvg-id="KiKA.de" tvg-name="KiKA" tvg-logo="https://i.imgur.com/vZdNp5S.png" tvg-country="DE" tvg-language="German" group-title="Kids",KiKA
-https://dash4.antik.sk/live/test_kika_tizen/playlist.m3u8
+https://viamotionhsi.netplus.ch/live/eds/kikahd/browser-HLS8/kikahd.m3u8
 
 #EXTINF:-1 tvg-id="KiKA.de" tvg-name="KiKA" tvg-logo="https://i.imgur.com/vZdNp5S.png" tvg-country="DE" tvg-language="German" group-title="Kids",KiKA
-https://viamotionhsi.netplus.ch/live/eds/kikahd/browser-HLS8/kikahd.m3u8
+https://dash4.antik.sk/live/test_kika_tizen/playlist.m3u8
 
 #EXTINF:-1 tvg-id="KiKA.de" tvg-name="KiKA" tvg-logo="https://i.imgur.com/vZdNp5S.png" tvg-country="DE" tvg-language="German" group-title="Kids",KiKA
 https://kikageohls.akamaized.net/hls/live/2022693/livetvkika_de/master.m3u8
@@ -14002,13 +14044,13 @@ https://dvrfl04.tulix.tv/teleup-ktla/mpegts
 https://content.uplynk.com/channel/39919d3f7a074eefa8bf579214e952f9.m3u8
 
 #EXTINF:-1 tvg-id="KTO.fr" tvg-name="KTO" tvg-logo="https://i.imgur.com/EY6TsdV.png" tvg-country="FR" tvg-language="French" group-title="Religious",KTO
-https://live-kto.akamaized.net/hls/live/2033284/KTO/master.m3u8
-
-#EXTINF:-1 tvg-id="KTO.fr" tvg-name="KTO" tvg-logo="https://i.imgur.com/EY6TsdV.png" tvg-country="FR" tvg-language="French" group-title="Religious",KTO
 https://viamotionhsi.netplus.ch/live/eds/kto/browser-dash/kto.mpd
 
 #EXTINF:-1 tvg-id="KTO.fr" tvg-name="KTO" tvg-logo="https://i.imgur.com/EY6TsdV.png" tvg-country="FR" tvg-language="French" group-title="Religious",KTO
 https://viamotionhsi.netplus.ch/live/eds/kto/browser-HLS8/kto.m3u8
+
+#EXTINF:-1 tvg-id="KTO.fr" tvg-name="KTO" tvg-logo="https://i.imgur.com/EY6TsdV.png" tvg-country="FR" tvg-language="French" group-title="Religious",KTO
+https://live-kto.akamaized.net/hls/live/2033284/KTO/master.m3u8
 
 #EXTINF:-1 tvg-id="KTOODT3.us" tvg-name="KTOO-DT3" tvg-logo="https://i.imgur.com/ppn5oJy.png" tvg-country="US" tvg-language="English" group-title="Documentary",KTOO-DT3
 https://api.v3.invintus.com/StreamURI/persis/2147483647/KTOO360TV.stream/media.m3u8
@@ -14566,13 +14608,13 @@ https://jmp2.uk/stvp-GBBC4300005AL
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/60fb01a24795a6000762fe83/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=affbdbfa-5fa3-48af-8369-57c005daef42&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=c45d659e-c2e5-4651-b57b-9e285779521e
 
 #EXTINF:-1 tvg-id="LemanBleu.ch" tvg-name="Leman Bleu" tvg-logo="https://i.imgur.com/6ijbSTr.png" tvg-country="CH" tvg-language="French" group-title="News",Leman Bleu
+http://livevideo.infomaniak.com/streaming/livecast/naxoo/playlist.m3u8
+
+#EXTINF:-1 tvg-id="LemanBleu.ch" tvg-name="Leman Bleu" tvg-logo="https://i.imgur.com/6ijbSTr.png" tvg-country="CH" tvg-language="French" group-title="News",Leman Bleu
 https://viamotionhsi.netplus.ch/live/eds/lemanbleu/browser-HLS8/lemanbleu.m3u8
 
 #EXTINF:-1 tvg-id="LemanBleu.ch" tvg-name="Leman Bleu" tvg-logo="https://i.imgur.com/6ijbSTr.png" tvg-country="CH" tvg-language="French" group-title="News",Leman Bleu
 https://viamotionhsi.netplus.ch/live/eds/lemanbleu/browser-dash/lemanbleu.mpd
-
-#EXTINF:-1 tvg-id="LemanBleu.ch" tvg-name="Leman Bleu" tvg-logo="https://i.imgur.com/6ijbSTr.png" tvg-country="CH" tvg-language="French" group-title="News",Leman Bleu
-http://livevideo.infomaniak.com/streaming/livecast/naxoo/playlist.m3u8
 
 #EXTINF:-1 tvg-id="LeMediaTV.fr" tvg-name="Le Media TV" tvg-logo="https://i.imgur.com/OK20oyl.png" tvg-country="FR" tvg-language="French" group-title="News",Le Media TV
 https://raw.githubusercontent.com/Sibprod/streams/main/ressources/dm/py/hls/lemedia.m3u8
@@ -14611,13 +14653,13 @@ https://livestream.telvue.com/leominster3/f7b44cfafd5c52223d5498196c8a2e7b.sdp/p
 https://livestream.telvue.com/leominster1/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8
 
 #EXTINF:-1 tvg-id="LEquipe.fr" tvg-name="L'Equipe" tvg-logo="https://i.imgur.com/t35zhM9.png" tvg-country="FR" tvg-language="French" group-title="Sports",L'Equipe
-https://dshn8inoshngm.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-gac2i63dmu8b7/LEquipe_FR.m3u8
-
-#EXTINF:-1 tvg-id="LEquipe.fr" tvg-name="L'Equipe" tvg-logo="https://i.imgur.com/t35zhM9.png" tvg-country="FR" tvg-language="French" group-title="Sports",L'Equipe
 https://viamotionhsi.netplus.ch/live/eds/lequipe21/browser-HLS8/lequipe21.m3u8
 
 #EXTINF:-1 tvg-id="LEquipe.fr" tvg-name="L'Equipe" tvg-logo="https://i.imgur.com/t35zhM9.png" tvg-country="FR" tvg-language="French" group-title="Sports",L'Equipe
 https://viamotionhsi.netplus.ch/live/eds/lequipe21/browser-dash/lequipe21.mpd
+
+#EXTINF:-1 tvg-id="LEquipe.fr" tvg-name="L'Equipe" tvg-logo="https://i.imgur.com/t35zhM9.png" tvg-country="FR" tvg-language="French" group-title="Sports",L'Equipe
+https://dshn8inoshngm.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-gac2i63dmu8b7/LEquipe_FR.m3u8
 
 #EXTINF:-1 tvg-id="LEquipe.fr" tvg-name="L'Equipe" tvg-logo="https://i.imgur.com/t35zhM9.png" tvg-country="FR" tvg-language="French" group-title="Sports",L'Equipe
 https://raw.githubusercontent.com/ipstreet312/freeiptv/master/ressources/dmotion/py/eqpe/equipe.m3u8
@@ -14912,6 +14954,9 @@ https://onetvhlslive.lotteimall.com/lotteonetvlive/lotteonetvlive.mp4.m3u8
 
 #EXTINF:-1 tvg-id="LotusTV.mo" tvg-name="Lotus TV" tvg-logo="https://i.imgur.com/7j8Lnog.png" tvg-country="MO" tvg-language="Yue Chinese" group-title="General",Lotus TV
 https://cdn1.skygo.mn/live/disk1/Lotus/HLS-FTA/Lotus.m3u8
+
+#EXTINF:-1 tvg-id="LotusTV.mo" tvg-name="Lotus TV" tvg-logo="https://i.imgur.com/7j8Lnog.png" tvg-country="MO" tvg-language="Yue Chinese" group-title="General" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",Lotus TV
+https://cdn4.skygo.mn/live/disk1/Lotus/HLSv3-FTA/Lotus.m3u8
 
 #EXTINF:-1 tvg-id="LougaTV.sn" tvg-name="Louga TV" tvg-logo="https://i.ibb.co/xXZ5kFy/unnamed.jpg" tvg-country="SN" tvg-language="French" group-title="General",Louga TV
 https://stream.sen-gt.com/Mbacke/myStream/playlist.m3u8
@@ -15225,8 +15270,11 @@ https://cdn-3.pishow.tv/live/1606/master.m3u8
 #EXTINF:-1 tvg-id="MalarTV.in" tvg-name="Malar TV" tvg-logo="https://www.lyngsat.com/logo/tv/mm/malar-tv-in.png" tvg-country="IN" tvg-language="Tamil" group-title="General",Malar TV
 https://cdn-3.pishow.tv/live/473/master.m3u8
 
-#EXTINF:-1 tvg-id="MalchinTV.mn" tvg-name="Malchin TV" tvg-logo="https://i.imgur.com/vCdEBZo.png" tvg-country="MN" tvg-language="Mongolian" group-title="Culture",Malchin TV
+#EXTINF:-1 tvg-id="MalchinTV.mn" tvg-name="Malchin TV" tvg-logo="https://i.imgur.com/vCdEBZo.png" tvg-country="MN" tvg-language="Mongolian" group-title="Culture" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",Malchin TV
 https://cdn4.skygo.mn/live/disk1/Malchin/HLSv3-FTA/Malchin.m3u8
+
+#EXTINF:-1 tvg-id="MalchinTV.mn" tvg-name="Malchin TV" tvg-logo="https://i.imgur.com/vCdEBZo.png" tvg-country="MN" tvg-language="Mongolian" group-title="Culture" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",Malchin TV
+https://cdn4.skygo.mn/live/disk1/Malchin/DASH-FTA/Malchin.mpd
 
 #EXTINF:-1 tvg-id="MaldivesTV.mv" tvg-name="Maldives TV" tvg-logo="https://i.imgur.com/Zl2FmFC.png" tvg-country="MV" tvg-language="English" group-title="Travel",Maldives TV
 https://lana.psm.mv/live/mtv.m3u8
@@ -15383,6 +15431,9 @@ https://mumt02.tangotv.in/MASTIII/index.m3u8
 
 #EXTINF:-1 tvg-id="MataroTelevisio.es" tvg-name="Mataro Televisio" tvg-logo="https://i.imgur.com/FTGbu8A.png" tvg-country="ES" tvg-language="Catalan" group-title="General" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36 CrKey/1.44.191160",Mataro Televisio
 https://liveingesta318.cdnmedia.tv/m1tvlive/smil:live.smil/playlist.m3u8?DVR=
+
+#EXTINF:-1 tvg-id="MatchPlaneta.ru" tvg-name="Match! Planeta" tvg-logo="https://i.imgur.com/vhyMb9D.png" tvg-country="RU" tvg-language="Russian" group-title="Sports" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",Match! Planeta
+https://cdn4.skygo.mn/live/disk1/Match_Planeta/HLSv3-FTA/Match_Planeta.m3u8
 
 #EXTINF:-1 tvg-id="MatchStrana.ru" tvg-name="Match! Strana" tvg-logo="https://i.imgur.com/X02s2UE.png" tvg-country="RU" tvg-language="Russian" group-title="Sports",Match! Strana
 http://31.148.48.15/Match_Strana/index.m3u8
@@ -15571,10 +15622,10 @@ https://mdrtvsnhls.akamaized.net/hls/live/2016928/mdrtvsn/index.m3u8
 https://mdrtvsahls.akamaized.net/hls/live/2016879/mdrtvsa/index.m3u8
 
 #EXTINF:-1 tvg-id="MDRFernsehen.de" tvg-name="MDR Fernsehen" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/MDR_Logo_2017.svg/512px-MDR_Logo_2017.svg.png" tvg-country="DE" tvg-language="German" group-title="General",MDR Fernsehen
-https://dash4.antik.sk/live/test_mdr_tizen/playlist.m3u8
+https://viamotionhsi.netplus.ch/live/eds/mdr/browser-HLS8/mdr.m3u8
 
 #EXTINF:-1 tvg-id="MDRFernsehen.de" tvg-name="MDR Fernsehen" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/MDR_Logo_2017.svg/512px-MDR_Logo_2017.svg.png" tvg-country="DE" tvg-language="German" group-title="General",MDR Fernsehen
-https://viamotionhsi.netplus.ch/live/eds/mdr/browser-HLS8/mdr.m3u8
+https://dash4.antik.sk/live/test_mdr_tizen/playlist.m3u8
 
 #EXTINF:-1 tvg-id="MDRFernsehen.de" tvg-name="MDR Fernsehen" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/MDR_Logo_2017.svg/512px-MDR_Logo_2017.svg.png" tvg-country="DE" tvg-language="German" group-title="General",MDR Fernsehen
 https://mdrtvthhls.akamaized.net/hls/live/2016880/mdrtvth/index.m3u8
@@ -15906,6 +15957,9 @@ http://hls.mirtv.cdnvideo.ru/mirtv-parampublish/mirtv7_2500/playlist.m3u8
 #EXTINF:-1 tvg-id="Mir.ru" tvg-name="Mir" tvg-logo="https://i.imgur.com/AqWaJT8.png" tvg-country="RU" tvg-language="Russian" group-title="General" http-user-agent="WINK/1.40.1 (AndroidTV/9) HlsWinkPlayer",Mir
 https://zabava-htlive.cdn.ngenix.net/hls/CH_MIR_7/variant.m3u8
 
+#EXTINF:-1 tvg-id="Mir.ru" tvg-name="Mir" tvg-logo="https://i.imgur.com/AqWaJT8.png" tvg-country="RU" tvg-language="Russian" group-title="General" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",Mir
+https://cdn4.skygo.mn/live/disk1/MIR/HLSv3-FTA/MIR.m3u8
+
 #EXTINF:-1 tvg-id="Mir.ru" tvg-name="Mir" tvg-logo="https://i.imgur.com/AqWaJT8.png" tvg-country="RU" tvg-language="Russian" group-title="General",Mir
 http://hls.mirtv.cdnvideo.ru/mirtv-parampublish/mirtv_2500/playlist.m3u8
 
@@ -16036,34 +16090,40 @@ https://mumt01.tangotv.in/MNADU/index.m3u8
 https://5ca49f2417d90.streamlock.net/mnau/livestream/playlist.m3u8
 
 #EXTINF:-1 tvg-id="MNB.mn" tvg-name="MNB" tvg-logo="https://i.imgur.com/RdRd0to.png" tvg-country="MN" tvg-language="Mongolian" group-title="General",MNB
-https://cdn4.skygo.mn/live/disk1/MNB/DASH-FTA/MNB.mpd
-
-#EXTINF:-1 tvg-id="MNB.mn" tvg-name="MNB" tvg-logo="https://i.imgur.com/RdRd0to.png" tvg-country="MN" tvg-language="Mongolian" group-title="General",MNB
-https://cdn4.skygo.mn/live/disk1/MNB/HLSv3-FTA/MNB.m3u8
-
-#EXTINF:-1 tvg-id="MNB.mn" tvg-name="MNB" tvg-logo="https://i.imgur.com/RdRd0to.png" tvg-country="MN" tvg-language="Mongolian" group-title="General",MNB
 https://live.mnb.mn/hls/mnb.stream.m3u8
 
-#EXTINF:-1 tvg-id="MNBMongoliinMedee.mn" tvg-name="MNB Mongoliin Medee" tvg-logo="https://i.imgur.com/KUvJzUD.png" tvg-country="MN" tvg-language="Mongolian" group-title="Other",MNB Mongoliin Medee
-https://cdn4.skygo.mn/live/disk1/MNB2/DASH-FTA/MNB2.mpd
+#EXTINF:-1 tvg-id="MNB.mn" tvg-name="MNB" tvg-logo="https://i.imgur.com/RdRd0to.png" tvg-country="MN" tvg-language="Mongolian" group-title="General" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",MNB
+https://cdn4.skygo.mn/live/disk1/MNB/DASH-FTA/MNB.mpd
 
-#EXTINF:-1 tvg-id="MNBMongoliinMedee.mn" tvg-name="MNB Mongoliin Medee" tvg-logo="https://i.imgur.com/KUvJzUD.png" tvg-country="MN" tvg-language="Mongolian" group-title="Other",MNB Mongoliin Medee
-https://cdn4.skygo.mn/live/disk1/MNB2/HLSv3-FTA/MNB2.m3u8
+#EXTINF:-1 tvg-id="MNB.mn" tvg-name="MNB" tvg-logo="https://i.imgur.com/RdRd0to.png" tvg-country="MN" tvg-language="Mongolian" group-title="General" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",MNB
+https://cdn4.skygo.mn/live/disk1/MNB/HLSv3-FTA/MNB.m3u8
 
 #EXTINF:-1 tvg-id="MNBMongoliinMedee.mn" tvg-name="MNB Mongoliin Medee" tvg-logo="https://i.imgur.com/KUvJzUD.png" tvg-country="MN" tvg-language="Mongolian" group-title="Other",MNB Mongoliin Medee
 https://live.mnb.mn/hls/mn2.stream.m3u8
 
-#EXTINF:-1 tvg-id="MNBSport.mn" tvg-name="MNB Sport" tvg-logo="https://i.imgur.com/z854PC3.png" tvg-country="MN" tvg-language="Mongolian" group-title="Sports",MNB Sport
-https://cdn4.skygo.mn/live/disk1/MNBSport/DASH-FTA/MNBSport.mpd
+#EXTINF:-1 tvg-id="MNBMongoliinMedee.mn" tvg-name="MNB Mongoliin Medee" tvg-logo="https://i.imgur.com/KUvJzUD.png" tvg-country="MN" tvg-language="Mongolian" group-title="Other" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",MNB Mongoliin Medee
+https://cdn4.skygo.mn/live/disk1/MNB2/DASH-FTA/MNB2.mpd
+
+#EXTINF:-1 tvg-id="MNBMongoliinMedee.mn" tvg-name="MNB Mongoliin Medee" tvg-logo="https://i.imgur.com/KUvJzUD.png" tvg-country="MN" tvg-language="Mongolian" group-title="Other" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",MNB Mongoliin Medee
+https://cdn4.skygo.mn/live/disk1/MNB2/HLSv3-FTA/MNB2.m3u8
 
 #EXTINF:-1 tvg-id="MNBSport.mn" tvg-name="MNB Sport" tvg-logo="https://i.imgur.com/z854PC3.png" tvg-country="MN" tvg-language="Mongolian" group-title="Sports",MNB Sport
 https://live.mnb.mn/hls/mnb_sport.stream.m3u8
 
-#EXTINF:-1 tvg-id="MNBWorld.mn" tvg-name="MNB World" tvg-logo="https://i.imgur.com/PHlj84Q.png" tvg-country="MN" tvg-language="English" group-title="General",MNB World
-https://cdn4.skygo.mn/live/disk1/MNB_World/HLSv3-FTA/MNB_World.m3u8
+#EXTINF:-1 tvg-id="MNBSport.mn" tvg-name="MNB Sport" tvg-logo="https://i.imgur.com/z854PC3.png" tvg-country="MN" tvg-language="Mongolian" group-title="Sports" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",MNB Sport
+https://cdn4.skygo.mn/live/disk1/MNBSport/DASH-FTA/MNBSport.mpd
+
+#EXTINF:-1 tvg-id="MNBSport.mn" tvg-name="MNB Sport" tvg-logo="https://i.imgur.com/z854PC3.png" tvg-country="MN" tvg-language="Mongolian" group-title="Sports" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",MNB Sport
+https://cdn4.skygo.mn/live/disk1/MNBSport/HLSv3-FTA/MNBSport.m3u8
 
 #EXTINF:-1 tvg-id="MNBWorld.mn" tvg-name="MNB World" tvg-logo="https://i.imgur.com/PHlj84Q.png" tvg-country="MN" tvg-language="English" group-title="General",MNB World
 https://live.mnb.mn/hls/mnb_world.stream.m3u8
+
+#EXTINF:-1 tvg-id="MNBWorld.mn" tvg-name="MNB World" tvg-logo="https://i.imgur.com/PHlj84Q.png" tvg-country="MN" tvg-language="English" group-title="General" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",MNB World
+https://cdn4.skygo.mn/live/disk1/MNB_World/HLSv3-FTA/MNB_World.m3u8
+
+#EXTINF:-1 tvg-id="MNBWorld.mn" tvg-name="MNB World" tvg-logo="https://i.imgur.com/PHlj84Q.png" tvg-country="MN" tvg-language="English" group-title="General" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",MNB World
+https://cdn4.skygo.mn/live/disk1/MNB_World/DASH-FTA/MNB_World.mpd
 
 #EXTINF:-1 tvg-id="MNetHD.mk" tvg-name="M-Net HD" tvg-logo="https://i.imgur.com/HDYqWuR.png" tvg-country="MK" tvg-language="Macedonian" group-title="General",M-Net HD
 http://ares.mnet.mk/hls/mnet.m3u8
@@ -16152,8 +16212,11 @@ https://jk3lz8xklw79-hls-live.5centscdn.com/lpl/d0dbe915091d400bd8ee7f27f0791303
 #EXTINF:-1 tvg-id="MonarchChannel.us" tvg-name="Monarch Channel" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/DISTROTV/LIVECHANNEL/666988d2bac4421ebc533615/images/logo_20231219_215904_69.png" tvg-country="US" tvg-language="English" group-title="Documentary",Monarch Channel
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/monarch/master.m3u8?ads.vf=wGO6y3y1_DC
 
-#EXTINF:-1 tvg-id="MongolianNewsChannel.mn" tvg-name="Mongolian News Channel" tvg-logo="https://i.imgur.com/gMVqbwU.png" tvg-country="MN" tvg-language="Mongolian" group-title="News",Mongolian News Channel
+#EXTINF:-1 tvg-id="MongolianNewsChannel.mn" tvg-name="Mongolian News Channel" tvg-logo="https://i.imgur.com/gMVqbwU.png" tvg-country="MN" tvg-language="Mongolian" group-title="News" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",Mongolian News Channel
 https://cdn4.skygo.mn/live/disk1/MNCTV/HLSv3-FTA/MNCTV.m3u8
+
+#EXTINF:-1 tvg-id="MongolianNewsChannel.mn" tvg-name="Mongolian News Channel" tvg-logo="https://i.imgur.com/gMVqbwU.png" tvg-country="MN" tvg-language="Mongolian" group-title="News" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",Mongolian News Channel
+https://cdn4.skygo.mn/live/disk1/MNCTV/DASH-FTA/MNCTV.mpd
 
 #EXTINF:-1 tvg-id="MONO29.th" tvg-name="MONO 29" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d5/Mono_29_Logo.png" tvg-country="TH" tvg-language="Thai" group-title="Entertainment",MONO 29
 https://monomax-uiripn.cdn.byteark.com/plain/th/1080p/index.m3u8
@@ -16260,8 +16323,11 @@ https://mvg-mv-xumo.otteravision.com/mvg/mv/mv.m3u8
 #EXTINF:-1 tvg-id="MouvTV.fr" tvg-name="Mouv' TV" tvg-logo="https://i.imgur.com/64nzKEu.jpg" tvg-country="FR" tvg-language="French" group-title="Music",Mouv' TV
 https://raw.githubusercontent.com/Sibprod/streams/main/ressources/dm/py/hls/mouv.m3u8
 
-#EXTINF:-1 tvg-id="MovieBox.mn" tvg-name="MovieBox" tvg-logo="https://i.imgur.com/xeO1Zb4.png" tvg-country="MN" tvg-language="Mongolian" group-title="Movies",MovieBox
+#EXTINF:-1 tvg-id="MovieBox.mn" tvg-name="MovieBox" tvg-logo="https://i.imgur.com/xeO1Zb4.png" tvg-country="MN" tvg-language="Mongolian" group-title="Movies" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",MovieBox
 https://cdn4.skygo.mn/live/disk1/Moviebox/HLSv3-FTA/Moviebox.m3u8
+
+#EXTINF:-1 tvg-id="MovieBox.mn" tvg-name="MovieBox" tvg-logo="https://i.imgur.com/xeO1Zb4.png" tvg-country="MN" tvg-language="Mongolian" group-title="Movies" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",MovieBox
+https://cdn4.skygo.mn/live/disk1/Moviebox/DASH-FTA/Moviebox.mpd
 
 #EXTINF:-1 tvg-id="Moviedome.us" tvg-name="Moviedome" tvg-logo="https://i.imgur.com/8c54ycg.png" tvg-country="US" tvg-language="German" group-title="Movies",Moviedome
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/615c1e5ce3039400070a0547/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=1b1e7524-4b81-11ef-a8ac-e146e4e7be02&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=9855fa27-eb7c-4e5a-852e-4c439515c25d
@@ -17107,10 +17173,10 @@ http://49.113.179.174:4022/udp/238.125.7.93:5140
 http://110.19.156.172:9901/tsfile/live/1003_1.m3u8
 
 #EXTINF:-1 tvg-id="NeiMonggolTV.cn" tvg-name="Nei Monggol TV" tvg-logo="https://i.imgur.com/WeugJBE.png" tvg-country="CN" tvg-language="Chinese" group-title="Other",Nei Monggol TV
-https://cdn4.skygo.mn/live/disk1/NeigMGL/HLSv3-FTA/NeigMGL.m3u8
-
-#EXTINF:-1 tvg-id="NeiMonggolTV.cn" tvg-name="Nei Monggol TV" tvg-logo="https://i.imgur.com/WeugJBE.png" tvg-country="CN" tvg-language="Chinese" group-title="Other",Nei Monggol TV
 http://223.110.245.161/ott.js.chinamobile.com/PLTV/3/224/3221225836/index.m3u8
+
+#EXTINF:-1 tvg-id="NeiMonggolTV.cn" tvg-name="Nei Monggol TV" tvg-logo="https://i.imgur.com/WeugJBE.png" tvg-country="CN" tvg-language="Chinese" group-title="Other" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",Nei Monggol TV
+https://cdn4.skygo.mn/live/disk1/NeigMGL/HLSv3-FTA/NeigMGL.m3u8
 
 #EXTINF:-1 tvg-id="NeiMonggolTV2MongolianCultureChannel.cn" tvg-name="Nei Monggol TV 2 Mongolian Culture Channel" tvg-logo="https://i.imgur.com/kpsjahG.png" tvg-country="CN" tvg-language="Chinese" group-title="Culture",Nei Monggol TV 2 Mongolian Culture Channel
 http://1.24.190.98:10080/hls/40/index.m3u8
@@ -17425,10 +17491,10 @@ http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs01
 https://newssimul-stream.nhk.jp/hls/live/2010561/nhknewssimul/master.m3u8
 
 #EXTINF:-1 tvg-id="NHKWorldJapan.jp" tvg-name="NHK World-Japan" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/NHK_World-Japan_TV.svg/512px-NHK_World-Japan_TV.svg.png" tvg-country="JP" tvg-language="Japanese" group-title="News",NHK World-Japan
-https://nhk.lls.pbs.org/index.m3u8
+https://viamotionhsi.netplus.ch/live/eds/nhk/browser-HLS8/nhk.m3u8
 
 #EXTINF:-1 tvg-id="NHKWorldJapan.jp" tvg-name="NHK World-Japan" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/NHK_World-Japan_TV.svg/512px-NHK_World-Japan_TV.svg.png" tvg-country="JP" tvg-language="Japanese" group-title="News",NHK World-Japan
-https://viamotionhsi.netplus.ch/live/eds/nhk/browser-HLS8/nhk.m3u8
+https://nhk.lls.pbs.org/index.m3u8
 
 #EXTINF:-1 tvg-id="NHKWorldJapan.jp" tvg-name="NHK World-Japan" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/NHK_World-Japan_TV.svg/512px-NHK_World-Japan_TV.svg.png" tvg-country="JP" tvg-language="Japanese" group-title="News",NHK World-Japan
 https://livehub-voidnet.onrender.com/cluster/streamcore/jp/NHK_StreamOrchestrator.m3u8
@@ -17439,14 +17505,14 @@ https://masterpl.hls.nhkworld.jp/hls/w/live/smarttv.m3u8
 #EXTINF:-1 tvg-id="NHKWorldJapan.jp" tvg-name="NHK World-Japan" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/NHK_World-Japan_TV.svg/512px-NHK_World-Japan_TV.svg.png" tvg-country="JP" tvg-language="Japanese" group-title="News",NHK World-Japan
 https://media-tyo.hls.nhkworld.jp/hls/w/live/master.m3u8
 
-#EXTINF:-1 tvg-id="NHKWorldJapan.jp" tvg-name="NHK World-Japan" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/NHK_World-Japan_TV.svg/512px-NHK_World-Japan_TV.svg.png" tvg-country="JP" tvg-language="Japanese" group-title="News",NHK World-Japan
+#EXTINF:-1 tvg-id="NHKWorldJapan.jp" tvg-name="NHK World-Japan" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/NHK_World-Japan_TV.svg/512px-NHK_World-Japan_TV.svg.png" tvg-country="JP" tvg-language="Japanese" group-title="News" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",NHK World-Japan
 https://cdn4.skygo.mn/live/disk1/NHK_World/HLSv3-FTA/NHK_World.m3u8
 
 #EXTINF:-1 tvg-id="NHKWorldPremium.jp" tvg-name="NHK World Premium" tvg-logo="https://i.imgur.com/4ESi2La.png" tvg-country="JP" tvg-language="English" group-title="Entertainment",NHK World Premium
 https://cdn.nhkworld.jp/www11/nhkworld-tv/pre/hlscomp.m3u8
 
-#EXTINF:-1 tvg-id="NHKWorldPremium.jp" tvg-name="NHK World Premium" tvg-logo="https://i.imgur.com/4ESi2La.png" tvg-country="JP" tvg-language="English" group-title="Entertainment",NHK World Premium
-https://cdn.skygo.mn/live/disk1/NHK_World_Premium/HLSv3-FTA/NHK_World_Premium.m3u8
+#EXTINF:-1 tvg-id="NHKWorldPremium.jp" tvg-name="NHK World Premium" tvg-logo="https://i.imgur.com/4ESi2La.png" tvg-country="JP" tvg-language="English" group-title="Entertainment" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",NHK World Premium
+https://cdn4.skygo.mn/live/disk1/NHK_World_Premium/HLSv3-FTA/NHK_World_Premium.m3u8
 
 #EXTINF:-1 tvg-id="NHRATV.us" tvg-name="NHRA TV" tvg-logo="https://i.imgur.com/jZgcm4k.png" tvg-country="US" tvg-language="English" group-title="Sports",NHRA TV
 https://aegis-cloudfront-1.tubi.video/b8c5eb48-349b-454f-9625-63911ee923f5/playlist.m3u8
@@ -17952,10 +18018,10 @@ http://43.252.18.195:5080/LiveApp/streams/ntvhd.m3u8
 #EXTINF:-1 tvg-id="NTV.kh" tvg-name="NTV" tvg-logo="https://i.imgur.com/SoBhuIb.png" tvg-country="KH" tvg-language="Khmer" group-title="Other",NTV
 https://live-evg10.tv360.metfone.com.kh/LiveApp/streams/ntvhd.m3u8
 
-#EXTINF:-1 tvg-id="NTV.mn" tvg-name="NTV" tvg-logo="https://i.imgur.com/2JbqbPY.png" tvg-country="MN" tvg-language="Mongolian" group-title="General",NTV
+#EXTINF:-1 tvg-id="NTV.mn" tvg-name="NTV" tvg-logo="https://i.imgur.com/2JbqbPY.png" tvg-country="MN" tvg-language="Mongolian" group-title="General" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",NTV
 https://cdn4.skygo.mn/live/disk1/NTVHD/DASH-FTA/NTVHD.mpd
 
-#EXTINF:-1 tvg-id="NTV.mn" tvg-name="NTV" tvg-logo="https://i.imgur.com/2JbqbPY.png" tvg-country="MN" tvg-language="Mongolian" group-title="General",NTV
+#EXTINF:-1 tvg-id="NTV.mn" tvg-name="NTV" tvg-logo="https://i.imgur.com/2JbqbPY.png" tvg-country="MN" tvg-language="Mongolian" group-title="General" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",NTV
 https://cdn4.skygo.mn/live/disk1/NTVHD/HLSv3-FTA/NTVHD.m3u8
 
 #EXTINF:-1 tvg-id="NTV.mv" tvg-name="NTV" tvg-logo="https://i.imgur.com/jnXpcwV.png" tvg-country="MV" tvg-language="Dhivehi" group-title="General",NTV
@@ -18522,8 +18588,11 @@ https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/6
 #EXTINF:-1 tvg-id="Ontustik.kz" tvg-name="Ontustik" tvg-logo="https://i.imgur.com/xqr1hjN.png" tvg-country="KZ" tvg-language="Kazakh" group-title="General",Ontustik
 https://stream.kaztrk.kz/regional/shymkenttv/index.m3u8
 
-#EXTINF:-1 tvg-id="ONTV.mn" tvg-name="ONTV" tvg-logo="https://i.imgur.com/EzODUBO.png" tvg-country="MN" tvg-language="Mongolian" group-title="General",ONTV
+#EXTINF:-1 tvg-id="ONTV.mn" tvg-name="ONTV" tvg-logo="https://i.imgur.com/EzODUBO.png" tvg-country="MN" tvg-language="Mongolian" group-title="General" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",ONTV
 https://cdn4.skygo.mn/live/disk1/ONTV/HLSv3-FTA/ONTV.m3u8
+
+#EXTINF:-1 tvg-id="ONTV.mn" tvg-name="ONTV" tvg-logo="https://i.imgur.com/EzODUBO.png" tvg-country="MN" tvg-language="Mongolian" group-title="General" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",ONTV
+https://cdn4.skygo.mn/live/disk1/ONTV/DASH-FTA/ONTV.mpd
 
 #EXTINF:-1 tvg-id="OnTV4U.us" tvg-name="OnTV4U" tvg-logo="https://i.imgur.com/yaCK1Mh.png" tvg-country="US" tvg-language="English" group-title="Shop",OnTV4U
 https://cdn13.crtvnoc.com/ONTV4U-on-DistroTV/index.m3u8?ads.vf=E61Io4zE1zK
@@ -18562,10 +18631,10 @@ https://cnn.hostlagarto.com/orbittv/tracks-v1a1/mono.m3u8
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5f5c216df68f920007888315/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=8ee99fa9-8924-42ef-bf8b-617216b5b280&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=8de5ef24-e476-4c8b-a9ba-1cca9e8b8ba9
 
 #EXTINF:-1 tvg-id="ORF1.at" tvg-name="ORF 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/ORF_1_2019.svg/512px-ORF_1_2019.svg.png" tvg-country="AT" tvg-language="German" group-title="General",ORF 1
-https://viamotionhsi.netplus.ch/live/eds/orf1/browser-HLS8/orf1.m3u8
+http://79.127.207.193/ORF1/playlist.m3u8
 
 #EXTINF:-1 tvg-id="ORF1.at" tvg-name="ORF 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/ORF_1_2019.svg/512px-ORF_1_2019.svg.png" tvg-country="AT" tvg-language="German" group-title="General",ORF 1
-http://79.127.207.193/ORF1/playlist.m3u8
+https://viamotionhsi.netplus.ch/live/eds/orf1/browser-HLS8/orf1.m3u8
 
 #EXTINF:-1 tvg-id="ORF1.at" tvg-name="ORF 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/ORF_1_2019.svg/512px-ORF_1_2019.svg.png" tvg-country="AT" tvg-language="German" group-title="General",ORF 1
 https://dash2.antik.sk/live/test_orf_eins_tizen/playlist.m3u8
@@ -18879,8 +18948,11 @@ https://bttv-live-z.r53.cdn.tv1.eu/13014bundestag-hk4/_definst_/live/video/hk4_d
 #EXTINF:-1 tvg-id="ParliamentofMalta.mt" tvg-name="Parliament of Malta" tvg-logo="https://upload.wikimedia.org/wikipedia/en/5/53/Logo_of_the_Parliament_of_Malta.png" tvg-country="MT" tvg-language="Maltese" group-title="Legislative",Parliament of Malta
 http://80.79.6.221:25461/smash/public/23
 
-#EXTINF:-1 tvg-id="ParliamentTV.mn" tvg-name="Parliament TV" tvg-logo="https://i.imgur.com/OD7YKuz.jpeg" tvg-country="MN" tvg-language="Mongolian" group-title="Legislative",Parliament TV
+#EXTINF:-1 tvg-id="ParliamentTV.mn" tvg-name="Parliament TV" tvg-logo="https://i.imgur.com/OD7YKuz.jpeg" tvg-country="MN" tvg-language="Mongolian" group-title="Legislative" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",Parliament TV
 https://cdn4.skygo.mn/live/disk1/Parlament/HLSv3-FTA/Parlament.m3u8
+
+#EXTINF:-1 tvg-id="ParliamentTV.mn" tvg-name="Parliament TV" tvg-logo="https://i.imgur.com/OD7YKuz.jpeg" tvg-country="MN" tvg-language="Mongolian" group-title="Legislative" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",Parliament TV
+https://cdn4.skygo.mn/live/disk1/Parlament/DASH-FTA/Parlament.mpd
 
 #EXTINF:-1 tvg-id="ParliamentTV.nz" tvg-name="Parliament TV" tvg-logo="https://i.imgur.com/2aHW4q7.png" tvg-country="NZ" tvg-language="English" group-title="Legislative",Parliament TV
 https://ptvlive.kordia.net.nz/out/v1/daf20b9a9ec5449dadd734e50ce52b74/index.m3u8
@@ -19086,7 +19158,7 @@ https://canadaremar2.todostreaming.es/live/peque-pequetv.m3u8
 #EXTINF:-1 tvg-id="PeraviaVision.do" tvg-name="Peravia Vision" tvg-logo="https://i.imgur.com/k1Wj5ka.png" tvg-country="DO" tvg-language="Spanish" group-title="General",Peravia Vision
 https://ss2.tvrdomi.com:1936/peraviavision/peraviavision/playlist.m3u8
 
-#EXTINF:-1 tvg-id="PeretzInternational.ru" tvg-name="Peretz International" tvg-logo="https://i.imgur.com/On6ggLe.png" tvg-country="RU" tvg-language="Russian" group-title="Entertainment",Peretz International
+#EXTINF:-1 tvg-id="PeretzInternational.ru" tvg-name="Peretz International" tvg-logo="https://i.imgur.com/On6ggLe.png" tvg-country="RU" tvg-language="Russian" group-title="Entertainment" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",Peretz International
 https://cdn4.skygo.mn/live/disk1/Che/HLSv3-FTA/Che.m3u8
 
 #EXTINF:-1 tvg-id="PerryMason.us" tvg-name="Perry Mason" tvg-logo="https://i.imgur.com/rHUUAwW.png" tvg-country="US" tvg-language="English" group-title="Series",Perry Mason
@@ -19228,13 +19300,13 @@ https://streamer2.nexgen.bz/16-PGTV/index.m3u8
 https://5be80bd118c27.streamlock.net:433/phenomenaltv/phenomenal/playlist.m3u8
 
 #EXTINF:-1 tvg-id="phoenix.de" tvg-name="phoenix" tvg-logo="https://i.imgur.com/T1532t9.png" tvg-country="DE" tvg-language="German" group-title="Other",phoenix
-https://zdf-hls-19.akamaized.net/hls/live/2016502/de/high/master.m3u8
-
-#EXTINF:-1 tvg-id="phoenix.de" tvg-name="phoenix" tvg-logo="https://i.imgur.com/T1532t9.png" tvg-country="DE" tvg-language="German" group-title="Other",phoenix
 https://viamotionhsi.netplus.ch/live/eds/phoenixhd/browser-dash/phoenixhd.mpd
 
 #EXTINF:-1 tvg-id="phoenix.de" tvg-name="phoenix" tvg-logo="https://i.imgur.com/T1532t9.png" tvg-country="DE" tvg-language="German" group-title="Other",phoenix
 https://viamotionhsi.netplus.ch/live/eds/phoenixhd/browser-HLS8/phoenixhd.m3u8
+
+#EXTINF:-1 tvg-id="phoenix.de" tvg-name="phoenix" tvg-logo="https://i.imgur.com/T1532t9.png" tvg-country="DE" tvg-language="German" group-title="Other",phoenix
+https://zdf-hls-19.akamaized.net/hls/live/2016502/de/high/master.m3u8
 
 #EXTINF:-1 tvg-id="PhoenixChineseChannel.hk" tvg-name="Phoenix Chinese Channel" tvg-logo="https://raw.githubusercontent.com/wanglindl/TVlogo/main/img/Phoenix1.png" tvg-country="HK" tvg-language="Chinese" group-title="General",Phoenix Chinese Channel
 http://223.110.245.139/ott.js.chinamobile.com/PLTV/3/224/3221226922/index.m3u8
@@ -19746,6 +19818,9 @@ https://cdn.live247stream.com/pmi/tv/playlist.m3u8
 #EXTINF:-1 tvg-id="PNCDrama.eg" tvg-name="PNC Drama" tvg-logo="https://i.imgur.com/Hg34mg3.png" tvg-country="EG" tvg-language="Arabic" group-title="Series",PNC Drama
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/pnc-drama/master.m3u8?ads.vf=xdliEBYtdWS
 
+#EXTINF:-1 tvg-id="Pobeda.ru" tvg-name="Pobeda" tvg-logo="https://i.imgur.com/4KiYSln.png" tvg-country="RU" tvg-language="Russian" group-title="Other" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",Pobeda
+https://cdn4.skygo.mn/live/disk1/Pobeda/HLSv3-FTA/Pobeda.m3u8
+
 #EXTINF:-1 tvg-id="Pobeda.ru" tvg-name="Pobeda" tvg-logo="https://i.imgur.com/4KiYSln.png" tvg-country="RU" tvg-language="Russian" group-title="Other",Pobeda
 https://streaming.thestream.cyou/live/43.m3u8
 
@@ -19983,7 +20058,7 @@ https://amg19223-amg19223c3-amgplt0351.playout.now3.amagi.tv/playlist/amg19223-a
 #EXTINF:-1 tvg-id="PremierSports1.mn" tvg-name="Premier Sports 1" tvg-logo="https://i.imgur.com/t5qCejI.png" tvg-country="MN" tvg-language="Mongolian" group-title="Sports",Premier Sports 1
 http://cdn4.skygo.mn/live/disk1/SPSPrime/HLS-FTA/SPSPrime.m3u8
 
-#EXTINF:-1 tvg-id="PremierSports2.mn" tvg-name="Premier Sports 2" tvg-logo="https://i.imgur.com/eMNWhDq.png" tvg-country="MN" tvg-language="Mongolian" group-title="Sports",Premier Sports 2
+#EXTINF:-1 tvg-id="PremierSports2.mn" tvg-name="Premier Sports 2" tvg-logo="https://i.imgur.com/eMNWhDq.png" tvg-country="MN" tvg-language="Mongolian" group-title="Sports" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",Premier Sports 2
 https://cdn4.skygo.mn/live/disk1/SPSPlay/HLS-FTA/SPSPlay.m3u8
 
 #EXTINF:-1 tvg-id="PremierSports2.ph" tvg-name="Premier Sports 2" tvg-logo="https://i.imgur.com/UQeXWd2.png" tvg-country="PH" tvg-language="English" group-title="Sports",Premier Sports 2
@@ -20854,6 +20929,12 @@ https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308718
 http://stream.tvtap.net:8081/live/it-rai2.stream/playlist.m3u8
 
 #EXTINF:-1 tvg-id="Rai3.it" tvg-name="Rai 3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Rai_3_-_Logo_2016.svg/512px-Rai_3_-_Logo_2016.svg.png" tvg-country="IT" tvg-language="Italian" group-title="Other",Rai 3
+https://viamotionhsi.netplus.ch/live/eds/rai3/browser-dash/rai3.mpd
+
+#EXTINF:-1 tvg-id="Rai3.it" tvg-name="Rai 3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Rai_3_-_Logo_2016.svg/512px-Rai_3_-_Logo_2016.svg.png" tvg-country="IT" tvg-language="Italian" group-title="Other",Rai 3
+https://viamotionhsi.netplus.ch/live/eds/rai3/browser-HLS8/rai3.m3u8
+
+#EXTINF:-1 tvg-id="Rai3.it" tvg-name="Rai 3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Rai_3_-_Logo_2016.svg/512px-Rai_3_-_Logo_2016.svg.png" tvg-country="IT" tvg-language="Italian" group-title="Other",Rai 3
 https://wzstreaming.rai.it/TVlive/liveStream/chunklist_w823540263.m3u8
 
 #EXTINF:-1 tvg-id="Rai3.it" tvg-name="Rai 3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Rai_3_-_Logo_2016.svg/512px-Rai_3_-_Logo_2016.svg.png" tvg-country="IT" tvg-language="Italian" group-title="Other",Rai 3
@@ -20867,12 +20948,6 @@ https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308709
 
 #EXTINF:-1 tvg-id="Rai3.it" tvg-name="Rai 3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Rai_3_-_Logo_2016.svg/512px-Rai_3_-_Logo_2016.svg.png" tvg-country="IT" tvg-language="Italian" group-title="Other",Rai 3
 http://stream.tvtap.net:8081/live/it-rai3.stream/playlist.m3u8
-
-#EXTINF:-1 tvg-id="Rai3.it" tvg-name="Rai 3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Rai_3_-_Logo_2016.svg/512px-Rai_3_-_Logo_2016.svg.png" tvg-country="IT" tvg-language="Italian" group-title="Other",Rai 3
-https://viamotionhsi.netplus.ch/live/eds/rai3/browser-dash/rai3.mpd
-
-#EXTINF:-1 tvg-id="Rai3.it" tvg-name="Rai 3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Rai_3_-_Logo_2016.svg/512px-Rai_3_-_Logo_2016.svg.png" tvg-country="IT" tvg-language="Italian" group-title="Other",Rai 3
-https://viamotionhsi.netplus.ch/live/eds/rai3/browser-HLS8/rai3.m3u8
 
 #EXTINF:-1 tvg-id="Rai4.it" tvg-name="Rai 4" tvg-logo="https://i.imgur.com/sEY21rg.png" tvg-country="IT" tvg-language="Italian" group-title="Other",Rai 4
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746966
@@ -21163,10 +21238,10 @@ https://rbb-hls-berlin.akamaized.net/hls/live/2017824/rbb_berlin/index.m3u8
 https://rbb-hls-brandenburg.akamaized.net/hls/live/2017825/rbb_brandenburg/master.m3u8
 
 #EXTINF:-1 tvg-id="rbbFernsehen.de" tvg-name="rbb Fernsehen" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Rbb_Fernsehen_Logo_2017.08.svg/512px-Rbb_Fernsehen_Logo_2017.08.svg.png" tvg-country="DE" tvg-language="German" group-title="Other",rbb Fernsehen
-https://dash2.antik.sk/live/test_rbb_tizen/playlist.m3u8
+https://viamotionhsi.netplus.ch/live/eds/rbb/browser-HLS8/rbb.m3u8
 
 #EXTINF:-1 tvg-id="rbbFernsehen.de" tvg-name="rbb Fernsehen" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Rbb_Fernsehen_Logo_2017.08.svg/512px-Rbb_Fernsehen_Logo_2017.08.svg.png" tvg-country="DE" tvg-language="German" group-title="Other",rbb Fernsehen
-https://viamotionhsi.netplus.ch/live/eds/rbb/browser-HLS8/rbb.m3u8
+https://dash2.antik.sk/live/test_rbb_tizen/playlist.m3u8
 
 #EXTINF:-1 tvg-id="RBKTV.ru" tvg-name="RBK-TV" tvg-logo="https://i.imgur.com/CwhmJby.png" tvg-country="RU" tvg-language="Russian" group-title="Business",RBK-TV
 https://uiptv.do.am/1ufc/701293058/playlist.m3u8
@@ -21274,10 +21349,10 @@ https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg00426-littledotstudio-realwildnz-
 https://lds-realwild-rakuten.amagi.tv/playlist.m3u8
 
 #EXTINF:-1 tvg-id="Record.br" tvg-name="Record" tvg-logo="https://i.imgur.com/sz9gTTr.png" tvg-country="BR" tvg-language="Portuguese" group-title="General",Record
-https://viamotionhsi.netplus.ch/live/eds/rederecordinternacional/browser-HLS8/rederecordinternacional.m3u8
+https://cdn.jmvstream.com/w/LVW-10842/LVW10842_513N26MDBL/chunklist.m3u8
 
 #EXTINF:-1 tvg-id="Record.br" tvg-name="Record" tvg-logo="https://i.imgur.com/sz9gTTr.png" tvg-country="BR" tvg-language="Portuguese" group-title="General",Record
-https://cdn.jmvstream.com/w/LVW-10842/LVW10842_513N26MDBL/chunklist.m3u8
+https://viamotionhsi.netplus.ch/live/eds/rederecordinternacional/browser-HLS8/rederecordinternacional.m3u8
 
 #EXTINF:-1 tvg-id="RecordNews.br" tvg-name="Record News" tvg-logo="https://i.imgur.com/HZDRG0K.png" tvg-country="BR" tvg-language="Portuguese" group-title="News",Record News
 https://playplusnews-lh.akamaihd.net/i/pp_nws@377849/master.m3u8
@@ -21462,7 +21537,7 @@ https://streaming.televizor-24-tochka.ru/live/14.m3u8
 #EXTINF:-1 tvg-id="RENTV.ru" tvg-name="REN TV" tvg-logo="https://i.imgur.com/0Tu5lte.png" tvg-country="RU" tvg-language="Russian" group-title="General" http-user-agent="WINK/1.44.1 (AndroidTV/9) HlsWinkPlayer",REN TV
 https://zabava-htlive.cdn.ngenix.net/hls/CH_RENTV/variant.m3u8
 
-#EXTINF:-1 tvg-id="RENTVInternational.ru" tvg-name="REN TV International" tvg-logo="https://i.imgur.com/gBjk9oF.png" tvg-country="RU" tvg-language="Russian" group-title="General",REN TV International
+#EXTINF:-1 tvg-id="RENTVInternational.ru" tvg-name="REN TV International" tvg-logo="https://i.imgur.com/gBjk9oF.png" tvg-country="RU" tvg-language="Russian" group-title="General" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",REN TV International
 https://cdn4.skygo.mn/live/disk1/RenTV/HLSv3-FTA/RenTV.m3u8
 
 #EXTINF:-1 tvg-id="Reporter.ua" tvg-name="Reporter" tvg-logo="https://i.imgur.com/LyA3kBR.png" tvg-country="UA" tvg-language="Ukrainian" group-title="News",Reporter
@@ -21634,10 +21709,10 @@ http://122.248.43.242:1935/RIAUTV/_definst_/myStream/playlist.m3u8
 https://common01.todostreaming.es/live/ribera-livestream.m3u8
 
 #EXTINF:-1 tvg-id="RiC.de" tvg-name="RiC" tvg-logo="https://i.imgur.com/4wMZ8Em.png" tvg-country="DE" tvg-language="German" group-title="Kids",RiC
-https://rictv.iptv-playoutcenter.de/rictv/rictv-web/playlist.m3u8
+https://viamotionhsi.netplus.ch/live/eds/ric/browser-HLS8/ric.m3u8
 
 #EXTINF:-1 tvg-id="RiC.de" tvg-name="RiC" tvg-logo="https://i.imgur.com/4wMZ8Em.png" tvg-country="DE" tvg-language="German" group-title="Kids",RiC
-https://viamotionhsi.netplus.ch/live/eds/ric/browser-HLS8/ric.m3u8
+https://rictv.iptv-playoutcenter.de/rictv/rictv-web/playlist.m3u8
 
 #EXTINF:-1 tvg-id="RiffTrax.us" tvg-name="RiffTrax" tvg-logo="https://i.imgur.com/hM4yKMn.png" tvg-country="US" tvg-language="German" group-title="Comedy",RiffTrax
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/58d947b9e420d8656ee101ab/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=affbdbfa-5fa3-48af-8369-57c005daef42&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=009093a4-d5d7-492f-871b-3d3e65818fc4
@@ -23586,8 +23661,11 @@ https://shd-gcp-live.edgenextcdn.net/live/bitmovin-sbc/90e09c0c28db26435799b4a14
 #EXTINF:-1 tvg-id="SBCTV.so" tvg-name="SBC TV" tvg-logo="https://i.imgur.com/VLhgTIA.png" tvg-country="SO" tvg-language="Somali" group-title="General",SBC TV
 http://cdn.mediavisionuae.com:1935/live/sbctv.stream/playlist.m3u8
 
-#EXTINF:-1 tvg-id="SBN.mn" tvg-name="SBN" tvg-logo="https://i.imgur.com/E3fvpwn.png" tvg-country="MN" tvg-language="Mongolian" group-title="General",SBN
+#EXTINF:-1 tvg-id="SBN.mn" tvg-name="SBN" tvg-logo="https://i.imgur.com/E3fvpwn.png" tvg-country="MN" tvg-language="Mongolian" group-title="General" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",SBN
 https://cdn4.skygo.mn/live/disk1/SBN/HLSv3-FTA/SBN.m3u8
+
+#EXTINF:-1 tvg-id="SBN.mn" tvg-name="SBN" tvg-logo="https://i.imgur.com/E3fvpwn.png" tvg-country="MN" tvg-language="Mongolian" group-title="General" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",SBN
+https://cdn4.skygo.mn/live/disk1/SBN/DASH-FTA/SBN.mpd
 
 #EXTINF:-1 tvg-id="SBNTVInternational.us" tvg-name="SBN TV International" tvg-logo="https://i.imgur.com/NJu6oYB.png" tvg-country="US" tvg-language="English" group-title="Religious",SBN TV International
 http://trn03.bozztv.com/gin-sbntv/index.m3u8
@@ -23733,7 +23811,7 @@ https://slbps-ml-sambatech.akamaized.net/samba-live/2472/7424/8a00fe7cc36ac263b2
 #EXTINF:-1 tvg-id="SETNews.tw" tvg-name="SET News" tvg-logo="https://i.imgur.com/EGVbAvJ.png" tvg-country="TW" tvg-language="Chinese" group-title="News",SET News
 http://seb.sason.top/sc/sllive_fhd.m3u8
 
-#EXTINF:-1 tvg-id="SevenChannel.mn" tvg-name="Seven Channel" tvg-logo="https://i.imgur.com/9Ld5ATz.png" tvg-country="MN" tvg-language="Mongolian" group-title="General",Seven Channel
+#EXTINF:-1 tvg-id="SevenChannel.mn" tvg-name="Seven Channel" tvg-logo="https://i.imgur.com/9Ld5ATz.png" tvg-country="MN" tvg-language="Mongolian" group-title="General" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",Seven Channel
 https://cdn4.skygo.mn/live/disk1/TV7/HLS-FTA/TV7.m3u8
 
 #EXTINF:-1 tvg-id="Sever.ru" tvg-name="Sever" tvg-logo="https://i.imgur.com/sTOQLYl.png" tvg-country="RU" tvg-language="Russian" group-title="Other",Sever
@@ -24549,8 +24627,11 @@ https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/6
 #EXTINF:-1 tvg-id="SowetoTV.za" tvg-name="Soweto TV" tvg-logo="https://admango.cdn.mangomolo.com/analytics/uploads/188/654228e5b5.jpg" tvg-country="ZA" tvg-language="English" group-title="Entertainment",Soweto TV
 https://cdn.freevisiontv.co.za/sttv/smil:soweto.stream.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="SoyonGegeeruulegchTV.mn" tvg-name="Soyon Gegeeruulegch TV" tvg-logo="https://i.imgur.com/iBZVvtW.png" tvg-country="MN" tvg-language="Mongolian" group-title="General",Soyon Gegeeruulegch TV
+#EXTINF:-1 tvg-id="SoyonGegeeruulegchTV.mn" tvg-name="Soyon Gegeeruulegch TV" tvg-logo="https://i.imgur.com/iBZVvtW.png" tvg-country="MN" tvg-language="Mongolian" group-title="General" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",Soyon Gegeeruulegch TV
 https://cdn4.skygo.mn/live/disk1/SoyonGegeeruulegch/HLSv3-FTA/SoyonGegeeruulegch.m3u8
+
+#EXTINF:-1 tvg-id="SoyonGegeeruulegchTV.mn" tvg-name="Soyon Gegeeruulegch TV" tvg-logo="https://i.imgur.com/iBZVvtW.png" tvg-country="MN" tvg-language="Mongolian" group-title="General" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",Soyon Gegeeruulegch TV
+https://cdn4.skygo.mn/live/disk1/SoyonGegeeruulegch/DASH-FTA/SoyonGegeeruulegch.mpd
 
 #EXTINF:-1 tvg-id="SOYPlanchaTV.cr" tvg-name="SOY Plancha TV" tvg-logo="https://i.ibb.co/P4kpMgk/1689344714578.jpg" tvg-country="CR" tvg-language="Spanish" group-title="Music",SOY Plancha TV
 https://59ef525c24caa.streamlock.net/vmtv/soyplancha/playlist.m3u8
@@ -24834,12 +24915,6 @@ https://live.cast-control.eu/StartMedia/StartMedia/playlist.m3u8
 #EXTINF:-1 tvg-id="StarTV.ch" tvg-name="Star TV" tvg-logo="https://i.imgur.com/04y9wz8.png" tvg-country="CH" tvg-language="German" group-title="Other",Star TV
 https://viamotionhsi.netplus.ch/live/eds/startv/browser-HLS8/startv.m3u8
 
-#EXTINF:-1 tvg-id="StarTV.mn" tvg-name="Star TV" tvg-logo="https://i.imgur.com/R6hxJgl.png" tvg-country="MN" tvg-language="Mongolian" group-title="General",Star TV
-https://cdn4.skygo.mn/live/disk1/Star/DASH-FTA/Star.mpd
-
-#EXTINF:-1 tvg-id="StarTV.mn" tvg-name="Star TV" tvg-logo="https://i.imgur.com/R6hxJgl.png" tvg-country="MN" tvg-language="Mongolian" group-title="General",Star TV
-https://cdn4.skygo.mn/live/disk1/Star/HLSv3-FTA/Star.m3u8
-
 #EXTINF:-1 tvg-id="STARTWorld.ru" tvg-name="START World" tvg-logo="https://i.imgur.com/TXtY5eM.png" tvg-country="RU" tvg-language="Russian" group-title="Movies",START World
 https://livetv.mylifeisgood.net.ru/channels/strvf.m3u8
 
@@ -25035,13 +25110,13 @@ https://streaming.televizor-24-tochka.ru/live/296.m3u8
 #EXTINF:-1 tvg-id="STS.ru" tvg-name="STS" tvg-logo="https://i.imgur.com/ilUzAeb.png" tvg-country="RU" tvg-language="Russian" group-title="Family" http-user-agent="WINK/1.44.1 (AndroidTV/9) HlsWinkPlayer",STS
 https://zabava-htlive.cdn.ngenix.net/hls/CH_STS/variant.m3u8
 
-#EXTINF:-1 tvg-id="STSInternational.ru" tvg-name="STS International" tvg-logo="https://i.imgur.com/mwiC0RG.png" tvg-country="RU" tvg-language="Russian" group-title="Other",STS International
+#EXTINF:-1 tvg-id="STSInternational.ru" tvg-name="STS International" tvg-logo="https://i.imgur.com/mwiC0RG.png" tvg-country="RU" tvg-language="Russian" group-title="Other" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",STS International
 https://cdn4.skygo.mn/live/disk1/STS/HLSv3-FTA/STS.m3u8
 
 #EXTINF:-1 tvg-id="STSkids.ru" tvg-name="STS kids" tvg-logo="https://i.imgur.com/o9kLpAL.png" tvg-country="RU" tvg-language="Russian" group-title="Kids",STS kids
 http://31.148.48.15/STS_Kids_HD/index.m3u8
 
-#EXTINF:-1 tvg-id="STSLove.ru" tvg-name="STS Love" tvg-logo="https://i.imgur.com/YBVZoDd.png" tvg-country="RU" tvg-language="Russian" group-title="Family",STS Love
+#EXTINF:-1 tvg-id="STSLove.ru" tvg-name="STS Love" tvg-logo="https://i.imgur.com/YBVZoDd.png" tvg-country="RU" tvg-language="Russian" group-title="Family" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",STS Love
 https://cdn4.skygo.mn/live/disk1/Fashion_TV/HLSv3-FTA/Fashion_TV.m3u8
 
 #EXTINF:-1 tvg-id="STSLove.ru" tvg-name="STS Love" tvg-logo="https://i.imgur.com/YBVZoDd.png" tvg-country="RU" tvg-language="Russian" group-title="Family",STS Love
@@ -25134,8 +25209,11 @@ https://live.mana2.my/SukeTv/index.m3u8?auth_key=1745177878-c9b78020e8d64aac92e7
 #EXTINF:-1 tvg-id="SulaTV.hn" tvg-name="Sula TV" tvg-logo="https://i.imgur.com/v90r5jS.png" tvg-country="HN" tvg-language="Spanish" group-title="General",Sula TV
 https://tv.webmedialive.com/sulatv/live/playlist.m3u8
 
-#EXTINF:-1 tvg-id="SuldTV.mn" tvg-name="Suld TV" tvg-logo="https://i.imgur.com/CnLxehv.png" tvg-country="MN" tvg-language="Mongolian" group-title="Other",Suld TV
+#EXTINF:-1 tvg-id="SuldTV.mn" tvg-name="Suld TV" tvg-logo="https://i.imgur.com/CnLxehv.png" tvg-country="MN" tvg-language="Mongolian" group-title="Other" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",Suld TV
 https://cdn4.skygo.mn/live/disk1/SuldTV/HLSv3-FTA/SuldTV.m3u8
+
+#EXTINF:-1 tvg-id="SuldTV.mn" tvg-name="Suld TV" tvg-logo="https://i.imgur.com/CnLxehv.png" tvg-country="MN" tvg-language="Mongolian" group-title="Other" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",Suld TV
+https://cdn4.skygo.mn/live/disk1/SuldTV/DASH-FTA/SuldTV.mpd
 
 #EXTINF:-1 tvg-id="SultraTV.id" tvg-name="Sultra TV" tvg-logo="https://i.imgur.com/cmpbNJz.png" tvg-country="ID" tvg-language="Indonesian" group-title="Other",Sultra TV
 http://122.248.43.242:1935/SULTRATV/_definst_/myStream/playlist.m3u8
@@ -25444,10 +25522,10 @@ https://cloudfront44.lexanetwork.com:1344/relay01/livestream004.sdp/playlist.m3u
 https://jireh-2-hls-video-us-isp.dps.live/hls-video/10b92cafdf3646cbc1e727f3dc76863621a327fd/t13/t13.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-id="T18.fr" tvg-name="T18" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Logo_de_la_chaine_T18.svg/langfr-512px-Logo_de_la_chaine_T18.svg.png" tvg-country="FR" tvg-language="French" group-title="General",T18
-https://raw.githubusercontent.com/Paradise-91/ParaTV/main/streams/t18/t18-dm.m3u8
+https://viamotionhsi.netplus.ch/live/eds/t18/browser-HLS8/t18.m3u8
 
 #EXTINF:-1 tvg-id="T18.fr" tvg-name="T18" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Logo_de_la_chaine_T18.svg/langfr-512px-Logo_de_la_chaine_T18.svg.png" tvg-country="FR" tvg-language="French" group-title="General",T18
-https://viamotionhsi.netplus.ch/live/eds/t18/browser-HLS8/t18.m3u8
+https://raw.githubusercontent.com/Paradise-91/ParaTV/main/streams/t18/t18-dm.m3u8
 
 #EXTINF:-1 tvg-id="T2Movies.ir" tvg-name="T2 Movies" tvg-logo="" tvg-country="IR" tvg-language="Persian" group-title="Movies",T2 Movies
 https://still-mud-3642.nqanzvyuupxwcahtfq.workers.dev/?url=https://ca-rt.onetv.app/T2Movies/index-0.m3u8
@@ -25892,6 +25970,9 @@ https://dvrfl03.bozztv.com/hondu-telecadena/index.m3u8
 
 #EXTINF:-1 tvg-id="Telecafe.co" tvg-name="Telecafe" tvg-logo="https://i.imgur.com/z18LRqM.png" tvg-country="CO" tvg-language="Spanish" group-title="General" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36 CrKey/1.44.191160",Telecafe
 https://liveingesta118.cdnmedia.tv/telecafelive/smil:dvrlive.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Telecafe.ru" tvg-name="Telecafe" tvg-logo="https://i.imgur.com/1H3h1HL.png" tvg-country="RU" tvg-language="Russian" group-title="Cooking" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",Telecafe
+https://cdn4.skygo.mn/live/disk1/Telecafe/HLSv3-FTA/Telecafe.m3u8
 
 #EXTINF:-1 tvg-id="Telecafe.ru" tvg-name="Telecafe" tvg-logo="https://i.imgur.com/1H3h1HL.png" tvg-country="RU" tvg-language="Russian" group-title="Cooking",Telecafe
 http://31.148.48.15/Telekafe/index.m3u8
@@ -26556,8 +26637,11 @@ https://mlb.essastream.com:8081/tenarensestvrd/playlist.m3u8
 #EXTINF:-1 tvg-id="TENCanal10.hn" tvg-name="TEN Canal 10" tvg-logo="https://i.imgur.com/HQiKyHy.jpg" tvg-country="HN" tvg-language="Spanish" group-title="Other",TEN Canal 10
 https://raw.githubusercontent.com/BellezaEmporium/IPTV_Exception/master/channels/hn/tentv.m3u8
 
-#EXTINF:-1 tvg-id="TenGerTV.mn" tvg-name="TenGer TV" tvg-logo="https://i.imgur.com/MmPvkcO.png" tvg-country="MN" tvg-language="Mongolian" group-title="General",TenGer TV
+#EXTINF:-1 tvg-id="TenGerTV.mn" tvg-name="TenGer TV" tvg-logo="https://i.imgur.com/MmPvkcO.png" tvg-country="MN" tvg-language="Mongolian" group-title="General" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",TenGer TV
 https://cdn4.skygo.mn/live/disk1/VTV/HLSv3-FTA/VTV.m3u8
+
+#EXTINF:-1 tvg-id="TenGerTV.mn" tvg-name="TenGer TV" tvg-logo="https://i.imgur.com/MmPvkcO.png" tvg-country="MN" tvg-language="Mongolian" group-title="General" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",TenGer TV
+https://cdn4.skygo.mn/live/disk1/VTV/DASH-FTA/VTV.mpd
 
 #EXTINF:-1 tvg-id="TennisChannel.us" tvg-name="Tennis Channel" tvg-logo="https://i.imgur.com/tsljAnY.png" tvg-country="US" tvg-language="English" group-title="Sports",Tennis Channel
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/681109b688b9d85d0938c6ba/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=affbdbfa-5fa3-48af-8369-57c005daef42&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=7d2214c9-9aea-438e-8722-a430fbb943b4
@@ -27147,8 +27231,11 @@ https://viamotionhsi.netplus.ch/live/eds/tmc/browser-HLS8/tmc.m3u8
 #EXTINF:-1 tvg-id="TMT.tj" tvg-name="TMT" tvg-logo="https://i.imgur.com/Dg0UkNR.png" tvg-country="TJ" tvg-language="Tajik" group-title="General",TMT
 https://live.teleradiocom.tj/9/3m.m3u8
 
-#EXTINF:-1 tvg-id="TMTV.mn" tvg-name="TM TV" tvg-logo="https://i.imgur.com/Bza9r7U.png" tvg-country="MN" tvg-language="Mongolian" group-title="General",TM TV
+#EXTINF:-1 tvg-id="TMTV.mn" tvg-name="TM TV" tvg-logo="https://i.imgur.com/Bza9r7U.png" tvg-country="MN" tvg-language="Mongolian" group-title="General" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",TM TV
 https://cdn4.skygo.mn/live/disk1/TM/HLSv3-FTA/TM.m3u8
+
+#EXTINF:-1 tvg-id="TMTV.mn" tvg-name="TM TV" tvg-logo="https://i.imgur.com/Bza9r7U.png" tvg-country="MN" tvg-language="Mongolian" group-title="General" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",TM TV
+https://cdn4.skygo.mn/live/disk1/TM/DASH-FTA/TM.mpd
 
 #EXTINF:-1 tvg-id="TMTV.us" tvg-name="TM TV" tvg-logo="https://tmlive.tv/wp-content/uploads/2018/07/immigration-consultants-network-en-.png" tvg-country="US" tvg-language="Persian" group-title="General",TM TV
 https://hls.tmtv.live/hls/stream.m3u8
@@ -27201,10 +27288,10 @@ https://zabava-htlive.cdn.ngenix.net/hls/CH_TNT/variant.m3u8
 #EXTINF:-1 tvg-id="TNT4.ru" tvg-name="TNT4" tvg-logo="https://i.imgur.com/gBokU5i.png" tvg-country="RU" tvg-language="Russian" group-title="Entertainment" http-user-agent="WINK/1.40.1 (AndroidTV/9) HlsWinkPlayer",TNT4
 https://zabava-htlive.cdn.ngenix.net/hls/CH_TNT4/variant.m3u8
 
-#EXTINF:-1 tvg-id="TNT4International.ru" tvg-name="TNT4 International" tvg-logo="https://i.imgur.com/SjdOaya.png" tvg-country="RU" tvg-language="Russian" group-title="Entertainment",TNT4 International
+#EXTINF:-1 tvg-id="TNT4International.ru" tvg-name="TNT4 International" tvg-logo="https://i.imgur.com/SjdOaya.png" tvg-country="RU" tvg-language="Russian" group-title="Entertainment" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",TNT4 International
 https://cdn4.skygo.mn/live/disk1/TNT4/HLSv3-FTA/TNT4.m3u8
 
-#EXTINF:-1 tvg-id="TNTInternational.ru" tvg-name="TNT International" tvg-logo="https://i.imgur.com/l0RGbRI.png" tvg-country="RU" tvg-language="Russian" group-title="Entertainment",TNT International
+#EXTINF:-1 tvg-id="TNTInternational.ru" tvg-name="TNT International" tvg-logo="https://i.imgur.com/l0RGbRI.png" tvg-country="RU" tvg-language="Russian" group-title="Entertainment" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",TNT International
 https://cdn4.skygo.mn/live/disk1/THT/HLSv3-FTA/THT.m3u8
 
 #EXTINF:-1 tvg-id="TNTKidsTV.ba" tvg-name="TNT Kids TV" tvg-logo="https://i.imgur.com/irTDbpn.png" tvg-country="BA" tvg-language="Bosnian" group-title="Kids",TNT Kids TV
@@ -27900,10 +27987,10 @@ https://s1.teve.mk/tvstanici/5/playlist.m3u8
 #EXTINF:-1 tvg-id="TV25.ge" tvg-name="TV 25" tvg-logo="https://www.magticom.ge/images/channels/MjAxOC8wOS8xMC9lNWU0YmY2OC1iNjgzLTQ1NWMtYTQzZi00YmZmYWFiYTcyYTguanBn.jpg" tvg-country="GE" tvg-language="Georgian" group-title="General",TV 25
 http://dvrfl05.bozztv.com/gin-tv25/index.m3u8
 
-#EXTINF:-1 tvg-id="TV25.mn" tvg-name="TV 25" tvg-logo="https://i.imgur.com/F3MMJMd.png" tvg-country="MN" tvg-language="Mongolian" group-title="General",TV 25
+#EXTINF:-1 tvg-id="TV25.mn" tvg-name="TV 25" tvg-logo="https://i.imgur.com/F3MMJMd.png" tvg-country="MN" tvg-language="Mongolian" group-title="General" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",TV 25
 https://cdn4.skygo.mn/live/disk1/MN25/DASH-FTA/MN25.mpd
 
-#EXTINF:-1 tvg-id="TV25.mn" tvg-name="TV 25" tvg-logo="https://i.imgur.com/F3MMJMd.png" tvg-country="MN" tvg-language="Mongolian" group-title="General",TV 25
+#EXTINF:-1 tvg-id="TV25.mn" tvg-name="TV 25" tvg-logo="https://i.imgur.com/F3MMJMd.png" tvg-country="MN" tvg-language="Mongolian" group-title="General" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",TV 25
 https://cdn4.skygo.mn/live/disk1/MN25/HLSv3-FTA/MN25.m3u8
 
 #EXTINF:-1 tvg-id="TV264.tr" tvg-name="TV 264" tvg-logo="https://i.imgur.com/tudXdOZ.png" tvg-country="TR" tvg-language="Turkish" group-title="Other",TV 264
@@ -27960,8 +28047,11 @@ https://tv3v.live-kd.com/live/tv3v/livestream/index.m3u8
 #EXTINF:-1 tvg-id="TV4.dz" tvg-name="TV4" tvg-logo="https://i.imgur.com/BZvdjBN.png" tvg-country="DZ" tvg-language="Kabyle" group-title="General",TV4
 http://149.62.177.98:8000/play/a01t/index.m3u8
 
-#EXTINF:-1 tvg-id="TV4.mn" tvg-name="TV 4" tvg-logo="https://i.imgur.com/WSvUsxy.png" tvg-country="MN" tvg-language="Mongolian" group-title="Other",TV 4
+#EXTINF:-1 tvg-id="TV4.mn" tvg-name="TV 4" tvg-logo="https://i.imgur.com/WSvUsxy.png" tvg-country="MN" tvg-language="Mongolian" group-title="Other" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",TV 4
 https://cdn4.skygo.mn/live/disk1/TV4/HLSv3-FTA/TV4.m3u8
+
+#EXTINF:-1 tvg-id="TV4.mn" tvg-name="TV 4" tvg-logo="https://i.imgur.com/WSvUsxy.png" tvg-country="MN" tvg-language="Mongolian" group-title="Other" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",TV 4
+https://cdn4.skygo.mn/live/disk1/TV4/DASH-FTA/TV4.mpd
 
 #EXTINF:-1 tvg-id="TV4.pl" tvg-name="TV4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d4/TV4Polska.png" tvg-country="PL" tvg-language="Polish" group-title="Other",TV4
 https://lb2-e2-32.pluscdn.pl/ch/1502601/309/dash/e25c2c93/live.mpd
@@ -27993,8 +28083,11 @@ https://hdbox.chunklistv.com/live?stream=3abn-nicaragua
 #EXTINF:-1 tvg-id="TV5.mn" tvg-name="TV5" tvg-logo="https://i.imgur.com/asGQfGN.png" tvg-country="MN" tvg-language="Mongolian" group-title="General",TV5
 https://10st.vcast.im/MYASIATV/TV5/playlist.m3u8
 
-#EXTINF:-1 tvg-id="TV5.mn" tvg-name="TV5" tvg-logo="https://i.imgur.com/asGQfGN.png" tvg-country="MN" tvg-language="Mongolian" group-title="General",TV5
+#EXTINF:-1 tvg-id="TV5.mn" tvg-name="TV5" tvg-logo="https://i.imgur.com/asGQfGN.png" tvg-country="MN" tvg-language="Mongolian" group-title="General" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",TV5
 https://cdn4.skygo.mn/live/disk1/TV5HD/HLSv3-FTA/TV5HD.m3u8
+
+#EXTINF:-1 tvg-id="TV5.mn" tvg-name="TV5" tvg-logo="https://i.imgur.com/asGQfGN.png" tvg-country="MN" tvg-language="Mongolian" group-title="General" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",TV5
+https://cdn4.skygo.mn/live/disk1/TV5HD/DASH-FTA/TV5HD.mpd
 
 #EXTINF:-1 tvg-id="TV52.tr" tvg-name="TV 52" tvg-logo="https://i.imgur.com/k4R5CzO.png" tvg-country="TR" tvg-language="Turkish" group-title="Other",TV 52
 http://stream.taksimbilisim.com:1935/tv52/smil:tv52.smil/playlist.m3u8
@@ -28059,8 +28152,14 @@ https://tv7plus.com/hls/tv7_site.m3u8
 #EXTINF:-1 tvg-id="TV7Triveneta.it" tvg-name="TV7 Triveneta" tvg-logo="https://i.imgur.com/ndFoo4V.png" tvg-country="IT" tvg-language="Italian" group-title="Other",TV7 Triveneta
 https://www.gruppotv7.com:8090/hls/ireporter.m3u8
 
-#EXTINF:-1 tvg-id="TV8.mn" tvg-name="TV8" tvg-logo="https://i.imgur.com/EguOdxW.png" tvg-country="MN" tvg-language="Mongolian" group-title="General",TV8
+#EXTINF:-1 tvg-id="TV8.mn" tvg-name="TV8" tvg-logo="https://i.imgur.com/EguOdxW.png" tvg-country="MN" tvg-language="Mongolian" group-title="General" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",TV8
 https://cdn4.skygo.mn/live/disk1/TV8HD/HLSv3-FTA/TV8HD.m3u8
+
+#EXTINF:-1 tvg-id="TV8.mn" tvg-name="TV8" tvg-logo="https://i.imgur.com/EguOdxW.png" tvg-country="MN" tvg-language="Mongolian" group-title="General" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",TV8
+https://cdn1.skygo.mn/live/disk1/TV8HD/HLS-FTA/TV8HD.m3u8
+
+#EXTINF:-1 tvg-id="TV8.mn" tvg-name="TV8" tvg-logo="https://i.imgur.com/EguOdxW.png" tvg-country="MN" tvg-language="Mongolian" group-title="General" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",TV8
+https://cdn4.skygo.mn/live/disk1/TV8HD/DASH-FTA/TV8HD.mpd
 
 #EXTINF:-1 tvg-id="TV8.sk" tvg-name="TV8" tvg-logo="https://i.imgur.com/Z7URrp1.png" tvg-country="SK" tvg-language="Slovak" group-title="Other",TV8
 http://109.74.145.11:1935/tv8/ngrp:tv8.stream_all/playlist.m3u8
@@ -28077,8 +28176,11 @@ https://tv8-live.daioncdn.net/tv8/tv8.m3u8
 #EXTINF:-1 tvg-id="TV8.tr" tvg-name="TV 8" tvg-logo="https://upload.wikimedia.org/wikipedia/tr/thumb/6/68/Tv8_Yeni_Logo.png/300px-Tv8_Yeni_Logo.png" tvg-country="TR" tvg-language="Turkish" group-title="Other",TV 8
 https://tv8.daioncdn.net/tv8/tv8.m3u8?app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3
 
-#EXTINF:-1 tvg-id="TV9.mn" tvg-name="TV9" tvg-logo="https://i.imgur.com/QFteAgd.png" tvg-country="MN" tvg-language="Mongolian" group-title="General",TV9
+#EXTINF:-1 tvg-id="TV9.mn" tvg-name="TV9" tvg-logo="https://i.imgur.com/QFteAgd.png" tvg-country="MN" tvg-language="Mongolian" group-title="General" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",TV9
 https://cdn4.skygo.mn/live/disk1/TV9HD/HLSv3-FTA/TV9HD.m3u8
+
+#EXTINF:-1 tvg-id="TV9.mn" tvg-name="TV9" tvg-logo="https://i.imgur.com/QFteAgd.png" tvg-country="MN" tvg-language="Mongolian" group-title="General" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",TV9
+https://cdn4.skygo.mn/live/disk1/TV9HD/DASH-FTA/TV9HD.mpd
 
 #EXTINF:-1 tvg-id="TV9.my" tvg-name="TV9" tvg-logo="https://i.imgur.com/Krh1F8d.png" tvg-country="MY" tvg-language="Malay" group-title="Other",TV9
 https://tonton-live-switch-ssar.akamaized.net/stream-tv9/master.m3u8?bpkio_serviceid=6c0958d82a830a02ca0936d9cfab8311
@@ -28344,6 +28446,9 @@ https://arenasportslovakia.ddns.net/hls/cetv2.m3u8
 #EXTINF:-1 tvg-id="TVCentral.sk" tvg-name="TV Central" tvg-logo="https://i.imgur.com/LqGT8o9.png" tvg-country="SK" tvg-language="Slovak" group-title="Other",TV Central
 https://dash4.antik.sk/live/test_central/playlist.m3u8
 
+#EXTINF:-1 tvg-id="TVCentrInternational.ru" tvg-name="TV Centr International" tvg-logo="https://i.imgur.com/tsCOnBW.png" tvg-country="RU" tvg-language="Russian" group-title="Other" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",TV Centr International
+https://cdn4.skygo.mn/live/disk1/TV_center/HLSv3-FTA/TV_center.m3u8
+
 #EXTINF:-1 tvg-id="TVCentro272HD.hn" tvg-name="TV Centro 27.2 HD" tvg-logo="https://i.imgur.com/Wo2scQf.jpg" tvg-country="HN" tvg-language="Spanish" group-title="Entertainment",TV Centro 27.2 HD
 https://cloud2.streaminglivehd.com:1936/8004/8004/playlist.m3u8
 
@@ -28363,13 +28468,13 @@ https://rtcg-live-open-geo.morescreens.com/RTCG_1_002/playlist.m3u8
 https://rtcg-live-open-geo.morescreens.com/RTCG_1_003/playlist.m3u8
 
 #EXTINF:-1 tvg-id="TVCGMNE.me" tvg-name="TVCG MNE" tvg-logo="https://i.imgur.com/pf8VEwf.png" tvg-country="ME" tvg-language="Serbian" group-title="Other",TVCG MNE
-https://rtcg-live-open.morescreens.com/RTCG_1_004/playlist.m3u8
-
-#EXTINF:-1 tvg-id="TVCGMNE.me" tvg-name="TVCG MNE" tvg-logo="https://i.imgur.com/pf8VEwf.png" tvg-country="ME" tvg-language="Serbian" group-title="Other",TVCG MNE
 https://viamotionhsi.netplus.ch/live/eds/rtcg/browser-dash/rtcg.mpd
 
 #EXTINF:-1 tvg-id="TVCGMNE.me" tvg-name="TVCG MNE" tvg-logo="https://i.imgur.com/pf8VEwf.png" tvg-country="ME" tvg-language="Serbian" group-title="Other",TVCG MNE
 https://viamotionhsi.netplus.ch/live/eds/rtcg/browser-HLS8/rtcg.m3u8
+
+#EXTINF:-1 tvg-id="TVCGMNE.me" tvg-name="TVCG MNE" tvg-logo="https://i.imgur.com/pf8VEwf.png" tvg-country="ME" tvg-language="Serbian" group-title="Other",TVCG MNE
+https://rtcg-live-open.morescreens.com/RTCG_1_004/playlist.m3u8
 
 #EXTINF:-1 tvg-id="TVChile.cl" tvg-name="TV Chile" tvg-logo="https://i.imgur.com/oYFto0V.png" tvg-country="CL" tvg-language="Spanish" group-title="General",TV Chile
 https://mdstrm.com/live-stream-playlist/533adcc949386ce765657d7c.m3u8
@@ -28405,10 +28510,10 @@ https://stream.castr.com/643880749cf895435bf8eadf/live_d0b3cf70e24111ed8ed2951b4
 https://viamotionhsi.netplus.ch/live/eds/tvcnews/browser-HLS8/tvcnews.m3u8
 
 #EXTINF:-1 tvg-id="TVCNews.ng" tvg-name="TVC News" tvg-logo="https://i.imgur.com/jaSq18B.png" tvg-country="NG" tvg-language="English" group-title="News",TVC News
-http://69.64.57.208/tvcnews/playlist.m3u8
+https://viamotionhsi.netplus.ch/live/eds/tvcnews/browser-dash/tvcnews.mpd
 
 #EXTINF:-1 tvg-id="TVCNews.ng" tvg-name="TVC News" tvg-logo="https://i.imgur.com/jaSq18B.png" tvg-country="NG" tvg-language="English" group-title="News",TVC News
-https://viamotionhsi.netplus.ch/live/eds/tvcnews/browser-dash/tvcnews.mpd
+http://69.64.57.208/tvcnews/playlist.m3u8
 
 #EXTINF:-1 tvg-id="TVColorCanal36.ec" tvg-name="TV Color Canal 36" tvg-logo="https://i.imgur.com/QJW6khK.jpg" tvg-country="EC" tvg-language="Spanish" group-title="General",TV Color Canal 36
 https://video.compuwebecuador.com:3067/live/tvcolorlive.m3u8
@@ -28522,10 +28627,10 @@ https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/tvei_asia_main_1080.m3u8
 https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/tvei_eu_main_1080.m3u8
 
 #EXTINF:-1 tvg-id="TVEInternacionalEuropeAsia.es" tvg-name="TVE Internacional Europe-Asia" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/TVE.svg/512px-TVE.svg.png" tvg-country="ES" tvg-language="Spanish" group-title="Other",TVE Internacional Europe-Asia
-https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/tvei_eu_main_576.m3u8
+https://viamotionhsi.netplus.ch/live/eds/tveinternacional/browser-HLS8/tveinternacional.m3u8
 
 #EXTINF:-1 tvg-id="TVEInternacionalEuropeAsia.es" tvg-name="TVE Internacional Europe-Asia" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/TVE.svg/512px-TVE.svg.png" tvg-country="ES" tvg-language="Spanish" group-title="Other",TVE Internacional Europe-Asia
-https://viamotionhsi.netplus.ch/live/eds/tveinternacional/browser-HLS8/tveinternacional.m3u8
+https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/tvei_eu_main_576.m3u8
 
 #EXTINF:-1 tvg-id="TVEllef.nl" tvg-name="TV Ellef" tvg-logo="https://i.imgur.com/FaCd2QY.png" tvg-country="NL" tvg-language="Dutch" group-title="Other",TV Ellef
 http://cdn22.streampartner.nl/tvellef/livestream/playlist.m3u8
@@ -29089,16 +29194,16 @@ https://5ca3e84a76d30.streamlock.net/gpacifico3/obregon.smil/playlist.m3u8
 http://213.81.153.221:8080/poprad
 
 #EXTINF:-1 tvg-id="TVPPolonia.pl" tvg-name="TVP Polonia" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/TVP_Polonia_Logo_2020.svg/512px-TVP_Polonia_Logo_2020.svg.png" tvg-country="PL" tvg-language="Polish" group-title="Other",TVP Polonia
-https://lowa8026-cmyk.github.io/tvpvod/399723.m3u8
-
-#EXTINF:-1 tvg-id="TVPPolonia.pl" tvg-name="TVP Polonia" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/TVP_Polonia_Logo_2020.svg/512px-TVP_Polonia_Logo_2020.svg.png" tvg-country="PL" tvg-language="Polish" group-title="Other",TVP Polonia
-https://dash2.antik.sk/live/test_tvp_polonia/playlist.m3u8
-
-#EXTINF:-1 tvg-id="TVPPolonia.pl" tvg-name="TVP Polonia" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/TVP_Polonia_Logo_2020.svg/512px-TVP_Polonia_Logo_2020.svg.png" tvg-country="PL" tvg-language="Polish" group-title="Other",TVP Polonia
 https://viamotionhsi.netplus.ch/live/eds/tvpolonia/browser-dash/tvpolonia.mpd
 
 #EXTINF:-1 tvg-id="TVPPolonia.pl" tvg-name="TVP Polonia" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/TVP_Polonia_Logo_2020.svg/512px-TVP_Polonia_Logo_2020.svg.png" tvg-country="PL" tvg-language="Polish" group-title="Other",TVP Polonia
 https://viamotionhsi.netplus.ch/live/eds/tvpolonia/browser-HLS8/tvpolonia.m3u8
+
+#EXTINF:-1 tvg-id="TVPPolonia.pl" tvg-name="TVP Polonia" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/TVP_Polonia_Logo_2020.svg/512px-TVP_Polonia_Logo_2020.svg.png" tvg-country="PL" tvg-language="Polish" group-title="Other",TVP Polonia
+https://lowa8026-cmyk.github.io/tvpvod/399723.m3u8
+
+#EXTINF:-1 tvg-id="TVPPolonia.pl" tvg-name="TVP Polonia" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/TVP_Polonia_Logo_2020.svg/512px-TVP_Polonia_Logo_2020.svg.png" tvg-country="PL" tvg-language="Polish" group-title="Other",TVP Polonia
+https://dash2.antik.sk/live/test_tvp_polonia/playlist.m3u8
 
 #EXTINF:-1 tvg-id="TVPrato.it" tvg-name="TV Prato" tvg-logo="https://i.imgur.com/72mAJtf.png" tvg-country="IT" tvg-language="Italian" group-title="Other",TV Prato
 https://live.mariatvcdn.com/tvprato/2db0dd5674586686a867ec52c3aa8e06.sdp/index.m3u8
@@ -29272,13 +29377,13 @@ https://tvr-iasi.lg.mncdn.com/tvriasi/smil:tvriasi.smil/chunklist_b5160000.m3u8
 https://tvr-info.lg.mncdn.com/tvrinfo/smil:tvrinfo.smil/chunklist_b5160000.m3u8
 
 #EXTINF:-1 tvg-id="TVRInternational.ro" tvg-name="TVR International" tvg-logo="https://i.imgur.com/w28wcHs.png" tvg-country="RO" tvg-language="Romanian" group-title="General",TVR International
-https://tvr-international.lg.mncdn.com/tvrinternational/smil:tvrinternational.smil/chunklist_b5160000.m3u8
-
-#EXTINF:-1 tvg-id="TVRInternational.ro" tvg-name="TVR International" tvg-logo="https://i.imgur.com/w28wcHs.png" tvg-country="RO" tvg-language="Romanian" group-title="General",TVR International
 https://viamotionhsi.netplus.ch/live/eds/tvrinternational/browser-dash/tvrinternational.mpd
 
 #EXTINF:-1 tvg-id="TVRInternational.ro" tvg-name="TVR International" tvg-logo="https://i.imgur.com/w28wcHs.png" tvg-country="RO" tvg-language="Romanian" group-title="General",TVR International
 https://viamotionhsi.netplus.ch/live/eds/tvrinternational/browser-HLS8/tvrinternational.m3u8
+
+#EXTINF:-1 tvg-id="TVRInternational.ro" tvg-name="TVR International" tvg-logo="https://i.imgur.com/w28wcHs.png" tvg-country="RO" tvg-language="Romanian" group-title="General",TVR International
+https://tvr-international.lg.mncdn.com/tvrinternational/smil:tvrinternational.smil/chunklist_b5160000.m3u8
 
 #EXTINF:-1 tvg-id="TVRipolles.es" tvg-name="TV Ripolles" tvg-logo="https://i.imgur.com/S5KB9DS.png" tvg-country="ES" tvg-language="Catalan" group-title="General" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36 CrKey/1.44.191160",TV Ripolles
 https://liveingesta318.cdnmedia.tv/tvripolleslive/smil:live.smil/playlist.m3u8?DVR=
@@ -29757,10 +29862,10 @@ https://unlimited1-us.dps.live/uatv/uatv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="UATV.cl" tvg-name="UATV" tvg-logo="https://i.imgur.com/BdZGS66.png" tvg-country="CL" tvg-language="Spanish" group-title="Other",UATV
 https://unlimited6-cl.dps.live/uatv/uatv.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="UBS.mn" tvg-name="UBS" tvg-logo="https://i.imgur.com/dIRMYYd.png" tvg-country="MN" tvg-language="Mongolian" group-title="General",UBS
+#EXTINF:-1 tvg-id="UBS.mn" tvg-name="UBS" tvg-logo="https://i.imgur.com/dIRMYYd.png" tvg-country="MN" tvg-language="Mongolian" group-title="General" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",UBS
 https://cdn4.skygo.mn/live/disk1/UBSHD/DASH-FTA/UBSHD.mpd
 
-#EXTINF:-1 tvg-id="UBS.mn" tvg-name="UBS" tvg-logo="https://i.imgur.com/dIRMYYd.png" tvg-country="MN" tvg-language="Mongolian" group-title="General",UBS
+#EXTINF:-1 tvg-id="UBS.mn" tvg-name="UBS" tvg-logo="https://i.imgur.com/dIRMYYd.png" tvg-country="MN" tvg-language="Mongolian" group-title="General" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",UBS
 https://cdn4.skygo.mn/live/disk1/UBSHD/HLSv3-FTA/UBSHD.m3u8
 
 #EXTINF:-1 tvg-id="UBTVBrawijaya.id" tvg-name="UBTV Brawijaya" tvg-logo="https://i.imgur.com/BQIi7ko.png" tvg-country="ID" tvg-language="Indonesian" group-title="Other" http-referrer="https://tv.ub.ac.id",UBTV Brawijaya
@@ -29811,8 +29916,11 @@ https://eu1.servers10.com:8081/8072/index.m3u8
 #EXTINF:-1 tvg-id="UltraTVPuebla.mx" tvg-name="Ultra TV Puebla" tvg-logo="https://www.ultralaradio.mx/sad/imagenes/sucursales/1.png" tvg-country="MX" tvg-language="Spanish" group-title="Other",Ultra TV Puebla
 https://5e50264bd6766.streamlock.net/telemetrika2/smil:telemetrika2.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="UlziiTV.mn" tvg-name="Ulzii TV" tvg-logo="https://i.imgur.com/p7tsUTI.png" tvg-country="MN" tvg-language="Mongolian" group-title="General",Ulzii TV
+#EXTINF:-1 tvg-id="UlziiTV.mn" tvg-name="Ulzii TV" tvg-logo="https://i.imgur.com/p7tsUTI.png" tvg-country="MN" tvg-language="Mongolian" group-title="General" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",Ulzii TV
 https://cdn4.skygo.mn/live/disk1/UlziiTV/HLSv3-FTA/UlziiTV.m3u8
+
+#EXTINF:-1 tvg-id="UlziiTV.mn" tvg-name="Ulzii TV" tvg-logo="https://i.imgur.com/p7tsUTI.png" tvg-country="MN" tvg-language="Mongolian" group-title="General" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",Ulzii TV
+https://cdn4.skygo.mn/live/disk1/UlziiTV/DASH-FTA/UlziiTV.mpd
 
 #EXTINF:-1 tvg-id="UmbriaTV.it" tvg-name="Umbria TV" tvg-logo="https://i.imgur.com/olJIJ7c.png" tvg-country="IT" tvg-language="Italian" group-title="Other",Umbria TV
 https://umbriatv.stream.rubidia.it:8083/live/umbriatv/playlist.m3u8
@@ -30530,6 +30638,9 @@ https://ott3.streann.com/loadbalancer/services/public/channels/5d23d5882cdce61da
 
 #EXTINF:-1 tvg-id="VPlusTVI.pt" tvg-name="V+ TVI" tvg-logo="https://upload.wikimedia.org/wikipedia/pt/e/ef/V%2BTVI_Logo.png" tvg-country="PT" tvg-language="Portuguese" group-title="General",V+ TVI
 https://video-auth2.iol.pt/live_vmais/live_vmais/edge_servers/vmais-720p/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Vremya.ru" tvg-name="Vremya" tvg-logo="https://i.imgur.com/jZlj3ga.png" tvg-country="RU" tvg-language="Russian" group-title="Other" http-user-agent="Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36",Vremya
+https://cdn4.skygo.mn/live/disk1/Vremya/HLSv3-FTA/Vremya.m3u8
 
 #EXTINF:-1 tvg-id="Vremya.ru" tvg-name="Vremya" tvg-logo="https://i.imgur.com/jZlj3ga.png" tvg-country="RU" tvg-language="Russian" group-title="Other",Vremya
 http://31.148.48.15/Vremya/index.m3u8
@@ -32247,14 +32358,14 @@ https://live.zoomnews.info/live/Zoom_playlist.m3u8
 #EXTINF:-1 tvg-id="ZooMoo.sg" tvg-name="ZooMoo" tvg-logo="https://i.imgur.com/ciTJrnl.png" tvg-country="SG" tvg-language="English" group-title="Kids",ZooMoo
 https://zoomoo-samsungau.amagi.tv/playlist.m3u8
 
+#EXTINF:-1 tvg-id="ZooMoo.sg" tvg-name="ZooMoo" tvg-logo="https://i.imgur.com/ciTJrnl.png" tvg-country="SG" tvg-language="English" group-title="Kids" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",ZooMoo
+https://cdn4.skygo.mn/live/disk1/Zoomoo/HLSv3-FTA/Zoomoo.m3u8
+
 #EXTINF:-1 tvg-id="ZooMoo.sg" tvg-name="ZooMoo" tvg-logo="https://i.imgur.com/ciTJrnl.png" tvg-country="SG" tvg-language="English" group-title="Kids",ZooMoo
 https://amg01553-blueantmediaasi-zoomoonz-samsungnz-rdufn.amagi.tv/playlist/amg01553-blueantmediaasi-zoomoonz-samsungnz/playlist.m3u8
 
 #EXTINF:-1 tvg-id="ZooMoo.sg" tvg-name="ZooMoo" tvg-logo="https://i.imgur.com/ciTJrnl.png" tvg-country="SG" tvg-language="English" group-title="Kids",ZooMoo
 https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01553-blueantmediaasi-zoomoonz-samsungnz/playlist.m3u8
-
-#EXTINF:-1 tvg-id="ZooMoo.sg" tvg-name="ZooMoo" tvg-logo="https://i.imgur.com/ciTJrnl.png" tvg-country="SG" tvg-language="English" group-title="Kids",ZooMoo
-https://cdn4.skygo.mn/live/disk1/Zoomoo/HLSv3-FTA/Zoomoo.m3u8
 
 #EXTINF:-1 tvg-id="ZooTV.ru" tvg-name="Zoo TV" tvg-logo="https://i.imgur.com/p7WzqGS.png" tvg-country="RU" tvg-language="Russian" group-title="Other",Zoo TV
 http://31.148.48.15/Zoo_TV/index.m3u8
