@@ -1,7 +1,5 @@
 name: Auto Update M3U
 
-# Run every 5 minutes (subject to GitHub's internal queue delays)
-# Also allows manual triggering from the Actions tab
 on:
   schedule:
     - cron: "*/20 * * * *"
@@ -11,48 +9,66 @@ permissions:
   contents: write
 
 jobs:
+  # JOB A: Fetches the data and creates the initial M3U
   update:
     runs-on: ubuntu-latest
-
     steps:
-      # Step 1: Checkout the repository
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Step 2: Set up Python
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      # Step 3: Install dependencies
       - name: Install dependencies
         run: |
           if [ -f requirements.txt ]; then
             pip install -r requirements.txt
           fi
 
-      # Step 4: Run your Python script
       - name: Run update script
         run: python update_m3u.py
 
-      # Step 5: Configure Git and Push Changes
-      - name: Commit and push changes
+      - name: Commit and push Job A changes
         run: |
-          # Identify the runner as the GitHub Actions Bot
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          
-          # Log the time to a file (helps verify the run worked)
           echo "Last run: $(date -u)" > last_run.log
-          
-          # Add all changes (including updates to channels.m3u or last_run.log)
           git add .
-          
-          # Only commit if there are actually changes to avoid errors
           if git diff --staged --quiet; then
-            echo "No changes to commit"
+            echo "No changes from Job A"
           else
-            git commit -m "Auto-update M3U and logs [skip ci]"
+            git commit -m "Job A: Update M3U [skip ci]"
+            git push
+          fi
+
+  # JOB B: Refines the result of Job A using finetune.py
+  finetune:
+    needs: update  # <--- THIS ENSURES JOB B WAITS FOR JOB A
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main  # Pull the updated M3U from Job A
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run finetune script
+        run: python finetune.py
+
+      - name: Commit and push Job B changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          if git diff --staged --quiet; then
+            echo "No refinement changes needed"
+          else
+            git commit -m "Job B: Finetune M3U [skip ci]"
             git push
           fi
