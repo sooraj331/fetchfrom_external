@@ -35,11 +35,6 @@ Wakelock Plus
 
 Android 7.0+
 
-Internet connection
+Valid Internet connection
 
-Valid M3U playlist
 
-⚠️ Disclaimer
-
-This app does not provide any content.
-Users must provide their own legally obtained IPTV playlists.
