@@ -59,7 +59,7 @@ def main():
             lang = ch['language']
             
             # If language appears 3 or fewer times, change to Unknown
-            if lang_counts[lang] <= 3:
+            if lang_counts[lang] <= 5:
                 inf = re.sub(r'tvg-language=".*?"', 'tvg-language="Unknown"', inf)
             
             f.write(f"\n{inf},{ch['name']}\n{ch['url']}\n")
