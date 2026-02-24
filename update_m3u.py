@@ -9,7 +9,7 @@ LOGOS_URL    = f"{BASE_URL}/logos.json"
 STREAMS_URL  = f"{BASE_URL}/streams.json"
 LANGUAGES_URL= f"{BASE_URL}/languages.json"
 
-OUTPUT_FILE = "channels_filtered.m3u"
+OUTPUT_FILE = "channels.m3u"
 
 def fetch_json(session, url):
     try:
