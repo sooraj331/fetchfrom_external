@@ -1,3 +1,3 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="StreaMax" tvg-name="StreaMax Tv" tvg-logo="https://i.imgur.com/LMxTAzY.png" group-title="A_StreaMax",|FR| TF1 SD
-https://github.com/sooraj331/fetchfrom_external/blob/main/hls/test/playlist.m3u8
+https://raw.githubusercontent.com/sooraj331/fetchfrom_external/refs/heads/main/hls/test/playlist.m3u8
