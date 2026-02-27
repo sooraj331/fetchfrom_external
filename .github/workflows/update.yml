@@ -75,3 +75,45 @@ jobs:
             git commit -m "Job B: Finetune M3U [skip ci]"
             git push
           fi
+
+
+          # JOB C: Final cleanup or external upload
+  job3:
+    needs: update 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run Finalize Script
+        # Pass the hidden URLs here as well
+        env:
+          BASE_URL: ${{ secrets.BASE_URL }}
+          PLAYER_URL_TEMPLATE: ${{ secrets.PLAYER_URL_TEMPLATE }}
+          # Add extra secrets if your third script needs them (e.g., API keys)
+          # EXTRA_SECRET: ${{ secrets.EXTRA_SECRET }} 
+        run: |
+          if [ -f roarzone.py ]; then
+            python roarzone.py
+          else
+            echo "No roarzone.py found, skipping script execution."
+          fi
+          
+      - name: Commit and push Job C changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          if git diff --staged --quiet; then
+            echo "No changes in Job C"
+          else
+            git commit -m "Job C: Finalize M3U [skip ci]"
+            git push
+          fi
