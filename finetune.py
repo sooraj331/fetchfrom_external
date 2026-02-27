@@ -15,7 +15,7 @@ def is_stream_valid(url):
         r = requests.head(url, timeout=6, allow_redirects=True)
 
         # Keep these status codes
-        if r.status_code in (200, 403, 404, 451):
+        if r.status_code in (200,451):   # Removed 404,403
             return True
 
         return False
