@@ -92,6 +92,14 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Install dependencies
+        # This is the missing piece! 
+        run: |
+          pip install aiohttp beautifulsoup4 python-dotenv
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          fi
+
       - name: Run Finalize Script
         # Pass the hidden URLs here as well
         env:
