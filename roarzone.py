@@ -116,7 +116,7 @@ async def main():
             for channel in valid_channels:
                 name = channel["name"].replace(",", " ")
                 logo = channel["logo"]
-                group = channel["tags"] or "Uncategorized"
+                group = (channel["tags"] or "Uncategorized").title()
                 url = channel["m3u8_url"]
                 f.write(
                     f'#EXTINF:-1 tvg-id="{name}" tvg-name="{name}" tvg-logo="{logo}" group-title="{group}",{name}\n'
