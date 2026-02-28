@@ -6,16 +6,21 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 FILE_PATH = "channels.m3u"
 MAX_THREADS = 50   # You can increase to 80 if VPS is strong
 
+# Standard User-Agent to mimic a real browser/player
+HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+}
+
 # =====================================
 # 🔎 FAST Stream Checker
 # =====================================
 def is_stream_valid(url):
     try:
-        # Use HEAD (much faster than GET)
-        r = requests.head(url, timeout=6, allow_redirects=True)
+        # Using HEAD + User-Agent for speed and compatibility
+        r = requests.head(url, headers=HEADERS, timeout=6, allow_redirects=True)
 
-        # Keep these status codes
-        if r.status_code in (200,451):   # Removed 404,403,451
+        # Strictly check for HTTP 200 OK
+        if r.status_code == 200:
             return True
 
         return False
@@ -29,9 +34,14 @@ def is_stream_valid(url):
 # =====================================
 def parse_m3u(file_path):
     channels = []
-    with open(file_path, 'r', encoding='utf-8') as f:
-        content = f.read()
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+    except FileNotFoundError:
+        print(f"❌ Error: {file_path} not found.")
+        return []
 
+    # Improved regex to capture the full info line and URL block
     pattern = re.compile(r'(#EXTINF:.*?,(.*?)\n(.*?)(?=\n#EXTINF|$))', re.DOTALL)
     matches = pattern.findall(content)
 
@@ -56,8 +66,11 @@ def parse_m3u(file_path):
 def main():
     print(f"📖 Reading {FILE_PATH}...")
     all_channels = parse_m3u(FILE_PATH)
+    
+    if not all_channels:
+        return
 
-    print(f"🔎 Checking {len(all_channels)} streams using {MAX_THREADS} threads...")
+    print(f"🔎 Checking {len(all_channels)} streams (Accepting 200 OK only)...")
 
     working_channels = []
 
@@ -72,18 +85,17 @@ def main():
             if future.result():
                 working_channels.append(ch)
 
-    print(f"✅ Valid streams kept: {len(working_channels)}")
-
-    # Remove duplicates
+    # Remove duplicates based on URL
     unique_channels = []
     seen = set()
-
     for ch in working_channels:
         if ch["url"] not in seen:
             unique_channels.append(ch)
             seen.add(ch["url"])
 
-    # Language count
+    print(f"✅ Valid unique streams kept: {len(unique_channels)}")
+
+    # Language count logic
     lang_counts = Counter(ch['language'] for ch in unique_channels)
 
     # Overwrite file
@@ -95,12 +107,13 @@ def main():
             inf = ch['inf_line']
             lang = ch['language']
 
+            # Simplify low-frequency languages
             if lang_counts[lang] <= 5:
                 inf = re.sub(r'tvg-language=".*?"', 'tvg-language="Unknown"', inf)
 
             f.write(f"\n{inf},{ch['name']}\n{ch['url']}\n")
 
-    print("🎉 Done! Dead removed, 404 kept.")
+    print(f"🎉 Done! Only 'HTTP 200' streams remain in {FILE_PATH}.")
 
 
 if __name__ == "__main__":
