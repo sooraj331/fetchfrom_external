@@ -35,6 +35,6 @@ Wakelock Plus
 
 Android 7.0+
 
-Valid Internet connection
+Valid Internet connection.
 
 
